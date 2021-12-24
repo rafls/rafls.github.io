@@ -1,0 +1,48 @@
+.cv__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 56px;
+}
+
+.cv__right {
+    width: 50%;
+}
+
+.cv__left {
+    text-align: end;
+    width: 50%;
+}
+
+.cv__title {
+    margin-top: 56px;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.cv__year {
+    font-size: 12px;
+    margin-bottom: 0 !important;
+}
+
+.cv__position {
+    font-size: 16px;
+    margin-bottom: 0 !important;
+}
+
+.cv__place {
+    font-size: 12px;
+}
+
+.cv__title:first-child {
+    margin-top: 0;
+}
+
+.cv__link {
+    color: #333333;
+    cursor: pointer;
+}
+
+.cv__link:hover {
+    color: #333333;
+}

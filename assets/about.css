@@ -1,0 +1,50 @@
+.about {
+    padding: 56px;
+}
+
+.about__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__left {
+}
+
+.about__middle {
+    max-width: 416px;
+}
+
+.about__middle-paragraph {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.about__middle-quote {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.about__middle-list {
+    font-size: 12px;
+}
+
+.about__right {
+    max-width: 306px;
+    font-size: 12px;
+}
+
+.about__right-interests {
+    margin-bottom: 40px;
+} 
+
+.about__image {
+    width: 340px;
+    height: auto;
+    border-radius: 3px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0 !important;
+}
