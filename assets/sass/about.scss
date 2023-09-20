@@ -1,0 +1,32 @@
+.about {
+  padding: 56px;
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__middle {
+    max-width: 416px;
+  }
+
+  &__middle-list {
+    font-size: 12px;
+  }
+
+  &__right {
+    max-width: 306px;
+    font-size: 12px;
+  }
+
+  &__right-interests {
+    margin-bottom: 40px;
+  }
+
+  &__image {
+    width: 340px;
+    height: auto;
+    border-radius: 3px;
+  }
+}

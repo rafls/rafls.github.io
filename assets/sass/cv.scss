@@ -1,48 +1,50 @@
-.cv__main {
+.cv {
+  &__main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 56px;
-}
+  }
 
-.cv__right {
+  &__right {
     width: 50%;
-}
+  }
 
-.cv__left {
+  &__left {
     text-align: end;
     width: 50%;
-}
+  }
 
-.cv__title {
+  &__title {
     margin-top: 56px;
     font-size: 12px;
     margin-bottom: 24px;
-}
+  }
 
-.cv__year {
+  &__year {
     font-size: 12px;
     margin-bottom: 0 !important;
-}
+  }
 
-.cv__position {
+  &__position {
     font-size: 16px;
     margin-bottom: 0 !important;
-}
+  }
 
-.cv__place {
+  &__place {
     font-size: 12px;
-}
+  }
 
-.cv__title:first-child {
+  &__title:first-child {
     margin-top: 0;
-}
+  }
 
-.cv__link {
+  &__link {
     color: #333333;
     cursor: pointer;
-}
+  }
 
-.cv__link:hover {
+  &__link:hover {
     color: #333333;
+  }
 }

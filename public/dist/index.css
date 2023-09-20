@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Inter-Light";
+  src: url(Inter-Light.ttf);
+}
+@font-face {
+  font-family: "Inter-Regular";
+  src: url(Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url(Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url(Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url(Inter-Bold.ttf);
+}
+* {
+  font-family: "Inter";
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.page-content {
+  padding-bottom: 2.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home__name {
+  color: #965501;
+  font-size: 32px;
+  font-size: 400;
+}
+.home__job {
+  color: #965501;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 24px;
+  gap: 14px;
+  font-size: 14px;
+}
+.header a {
+  text-decoration: none;
+  color: #965501;
+}
+.header a:hover {
+  color: #965501;
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+  color: #965501;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.cv__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 56px;
+}
+.cv__right {
+  width: 50%;
+}
+.cv__left {
+  text-align: end;
+  width: 50%;
+}
+.cv__title {
+  margin-top: 56px;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+.cv__year {
+  font-size: 12px;
+  margin-bottom: 0 !important;
+}
+.cv__position {
+  font-size: 16px;
+  margin-bottom: 0 !important;
+}
+.cv__place {
+  font-size: 12px;
+}
+.cv__title:first-child {
+  margin-top: 0;
+}
+.cv__link {
+  color: #333333;
+  cursor: pointer;
+}
+.cv__link:hover {
+  color: #333333;
+}
+
+.about {
+  padding: 56px;
+}
+.about__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about__middle {
+  max-width: 416px;
+}
+.about__middle-list {
+  font-size: 12px;
+}
+.about__right {
+  max-width: 306px;
+  font-size: 12px;
+}
+.about__right-interests {
+  margin-bottom: 40px;
+}
+.about__image {
+  width: 340px;
+  height: auto;
+  border-radius: 3px;
+}
+
+/*# sourceMappingURL=index.css.map */

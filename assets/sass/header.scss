@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: $s-24;
+  gap: $s-14;
+  font-size: $s-14;
+
+  a {
+    text-decoration: none;
+    color: $c-primary;
+
+    &:hover {
+      color: $c-primary;
+      text-decoration: underline;
+    }
+  }
+}

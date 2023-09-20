@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+  flex-direction: column;
+
+  &__name {
+    color: $c-primary;
+    font-size: $s-32;
+    font-size: $fw-regular;
+  }
+
+  &__job {
+    color: $c-primary;
+    font-size: $s-48;
+    font-weight: $fw-medium;
+  }
+}
