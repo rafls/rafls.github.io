@@ -18,8 +18,57 @@
     <div class="container">
       <div><%- include('components/header') %></div>
       <div class="home">
-        <span class="home__name"> Rafaela Silva </span>
-        <span class="home__job"> UX/UI Designer </span>
+        <div class="home__top">
+          <div class="home__presentation-top">
+            <span class="home__name"> Rafaela Silva </span>
+            <div class="home__tags">
+              <div>
+                <%- include('components/tags', {text: '4 years experience',
+                outlined: false})%>
+              </div>
+              <div>
+                <%- include('components/tags', {text: '🌍 Based in Portugal',
+                outlined: false})%>
+              </div>
+            </div>
+          </div>
+          <div class="home__presentation-bottom">
+            <span class="home__job"> UX/UI Designer </span>
+            <div class="home__tags">
+              <div>
+                <%- include('components/tags', {text: 'Figma', outlined:
+                true})%>
+              </div>
+              <div>
+                <%- include('components/tags', {text: 'HTML', outlined: true})%>
+              </div>
+              <div>
+                <%- include('components/tags', {text: 'CSS/SASS', outlined:
+                true})%>
+              </div>
+              <div>
+                <%- include('components/tags', {text: 'React', outlined:
+                true})%>
+              </div>
+              <div>
+                <%- include('components/tags', {text: 'Ruby on Rails', outlined:
+                true})%>
+              </div>
+              <div>
+                <%- include('components/tags', {text: 'Git', outlined: true})%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home__bottom">
+          <div class="home__section-1">
+            <img src="/images/about.jpg" alt="about" />
+            <span class="home__section-1__img-text"> About me </span>
+          </div>
+          <div class="home__section-2"></div>
+          <div class="home__section-3"></div>
+          <div class="home__section-4"></div>
+        </div>
       </div>
       <div><%- include('components/footer') %></div>
     </div>
