@@ -1,33 +1,31 @@
+---
+import Footer from "../components/footer.astro"
+import Header from "../components/header.astro"
+import Tags from "../components/tags.astro"
+
+import stylesUrl from "../sass/index.scss?url"
+import '@fontsource-variable/inter';
+---
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link href="/dist/index.css" rel="stylesheet" type="text/css" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preload" href={stylesUrl} as="style">
+    <link rel="stylesheet" href={stylesUrl}>
   </head>
   <body>
     <div class="container">
-      <!-- <div><%- include('components/header') %></div> -->
+      <!-- <div><Header /></div> -->
       <div class="home">
         <div class="home__header">
           <span class="home__name-header"> Rafaela Silva </span>
           <div class="home__tags">
             <div>
-              <%- include('components/tags', {text: '✍🏻 5 years of experience',
-              outlined: false})%>
+              <Tags text='✍🏻 5 years of experience' outlined={false}/>
             </div>
             <div>
-              <%- include('components/tags', {text: '🌍 Based in Portugal',
-              outlined: false})%>
+              <Tags text='🌍 Based in Portugal' outlined={false} />
             </div>
           </div>
         </div>
@@ -51,34 +49,28 @@
           <div class="home__presentation-bottom">
             <div class="home__tags">
               <div>
-                <%- include('components/tags', {text: 'Figma', outlined:
-                true})%>
+                <Tags text='Figma' outlined={true} />
               </div>
               <div>
-                <%- include('components/tags', {text: 'HTML', outlined: true})%>
+                <Tags text='HTML' outlined={true} />
               </div>
               <div>
-                <%- include('components/tags', {text: 'CSS/SASS', outlined:
-                true})%>
+                <Tags text='CSS/SASS' outlined={true} />
               </div>
               <div>
-                <%- include('components/tags', {text: 'Tailwind', outlined:
-                true})%>
+                <Tags text='Tailwind' outlined={true} />
               </div>
               <div>
-                <%- include('components/tags', {text: 'React', outlined:
-                true})%>
+                <Tags text='React' outlined={true} />
               </div>
               <div>
-                <%- include('components/tags', {text: 'Ruby on Rails', outlined:
-                true})%>
+                <Tags text='Ruby on Rails' outlined={true} />
               </div>
               <div>
-                <%- include('components/tags', {text: 'Git', outlined: true})%>
+                <Tags text='Git' outlined={true} />
               </div>
               <div>
-                <%- include('components/tags', {text: 'Leadership', outlined:
-                true})%>
+                <Tags text='Leadership' outlined={true} />
               </div>
             </div>
           </div>
@@ -133,12 +125,12 @@
           </div> -->
         <!-- </div> -->
       </div>
-      <%- include('components/footer') %>
+      <Footer />
     </div>
   </body>
 </html>
 
-<script>
+<!-- <script>
   function moveElement() {
     const sectionTwoImage = document.getElementById("sectionTwoImage");
 
@@ -158,4 +150,4 @@
     sectionThreeText2.style.content = "Sustainability";
     sectionThreeText3.style.content = "Transition Design";
   }
-</script>
+</script> -->

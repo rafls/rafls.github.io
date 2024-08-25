@@ -1,0 +1,33 @@
+* {
+  font-family: "Inter Variable";
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: $c-light-beige !important;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto $s-16;
+
+  @media only screen and (min-width: 768px) {
+    margin: auto $s-56;
+  }
+}
+
+.page-content {
+  padding-bottom: 2.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0 !important;
+}

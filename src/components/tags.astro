@@ -1,0 +1,4 @@
+---
+const { outlined, text } = Astro.props
+---
+<div class={"tags " + `tags__${outlined ? "outlined" : "filled"}`}>{text}</div>
