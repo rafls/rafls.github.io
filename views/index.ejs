@@ -16,24 +16,39 @@
   </head>
   <body>
     <div class="container">
-      <div><%- include('components/header') %></div>
+      <!-- <div><%- include('components/header') %></div> -->
       <div class="home">
+        <div class="home__header">
+          <span class="home__name-header"> Rafaela Silva </span>
+          <div class="home__tags">
+            <div>
+              <%- include('components/tags', {text: '✍🏻 5 years of experience',
+              outlined: false})%>
+            </div>
+            <div>
+              <%- include('components/tags', {text: '🌍 Based in Portugal',
+              outlined: false})%>
+            </div>
+          </div>
+        </div>
         <div class="home__top">
           <div class="home__presentation-top">
-            <span class="home__name"> Rafaela Silva </span>
-            <div class="home__tags">
+            <div class="home__introduction">
               <div>
-                <%- include('components/tags', {text: '4 years experience',
-                outlined: false})%>
+                <span class="home__name"> Rafaela Silva </span>
+                <span class="home__name"> ✱ </span>
               </div>
-              <div>
-                <%- include('components/tags', {text: '🌍 Based in Portugal',
-                outlined: false})%>
-              </div>
+              <span class="home__text">
+                UX/UI Designer and Frontend developer <br />
+                focused on
+                <span class="home__text-highlight"> health </span> and
+                <span class="home__text-highlight"> sustainability </span>
+                <br />
+                projects and innovation.
+              </span>
             </div>
           </div>
           <div class="home__presentation-bottom">
-            <span class="home__job"> UX/UI Designer </span>
             <div class="home__tags">
               <div>
                 <%- include('components/tags', {text: 'Figma', outlined:
@@ -47,6 +62,10 @@
                 true})%>
               </div>
               <div>
+                <%- include('components/tags', {text: 'Tailwind', outlined:
+                true})%>
+              </div>
+              <div>
                 <%- include('components/tags', {text: 'React', outlined:
                 true})%>
               </div>
@@ -57,20 +76,86 @@
               <div>
                 <%- include('components/tags', {text: 'Git', outlined: true})%>
               </div>
+              <div>
+                <%- include('components/tags', {text: 'Leadership', outlined:
+                true})%>
+              </div>
             </div>
           </div>
         </div>
-        <div class="home__bottom">
-          <div class="home__section-1">
+        <!-- <div class="home__bottom"> -->
+        <!-- <div class="home__section-1">
             <img src="/images/about.jpg" alt="about" />
             <span class="home__section-1__img-text"> About me </span>
-          </div>
-          <div class="home__section-2"></div>
-          <div class="home__section-3"></div>
-          <div class="home__section-4"></div>
-        </div>
+          </div> -->
+        <!-- <div class="home__section-2" onmouseover="moveElement()">
+            <span
+              >'Through design, I aspire to create a world where sustainability
+              is not just a buzzword, <br />
+              but a way of life - where user experience and responsibility go
+              hand in hand.'
+            </span> -->
+        <!-- <img src="/images/handshake.svg" alt="emoji handshake" /> -->
+        <!-- <img
+              class="home__section-2__bee-img"
+              id="sectionTwoImage"
+              src="/images/bee.svg"
+              alt="emoji bee"
+            /> -->
+        <!-- </div> -->
+        <!-- <div class="home__section-3" onmouseover="changeText()">
+            <div class="home__section-3__container">
+              <span id="sectionThreeTitle" class="home__section-3__title">
+                Focus:
+              </span>
+              <span id="sectionThreeText1" class="home__section-3__text">
+                Mobile and Web Design
+              </span> -->
+        <!-- <span id="sectionThreeText2" class="home__section-3__text">
+                Product Design
+              </span> -->
+        <!-- <span id="sectionThreeText3" class="home__section-3__text">
+                Interaction Design
+              </span> -->
+        <!-- <span id="sectionThreeText3" class="home__section-3__text">
+                Transition Design
+              </span>
+              <span id="sectionThreeText3" class="home__section-3__text">
+                Accessibility
+              </span>
+            </div>
+          </div> -->
+        <!-- <div class="home__section-4">
+            <div class="home__section-4__circle"></div>
+            <div class="home__section-4__oval"></div>
+            <span class="home__section-4__title"> 7.63.1 </span>
+            <span class="home__section-4__text"> Contrast Ratio </span>
+          </div> -->
+        <!-- </div> -->
       </div>
-      <div><%- include('components/footer') %></div>
+      <%- include('components/footer') %>
     </div>
   </body>
 </html>
+
+<script>
+  function moveElement() {
+    const sectionTwoImage = document.getElementById("sectionTwoImage");
+
+    sectionTwoImage.style.transition = "ease-in-out 0.6s";
+    sectionTwoImage.style.top = "124px";
+    sectionTwoImage.style.left = "240px";
+  }
+
+  function changeText() {
+    const sectionThreeTitle = document.getElementById("sectionThreeTitle");
+    const sectionThreeText1 = document.getElementById("sectionThreeText1");
+    const sectionThreeText2 = document.getElementById("sectionThreeText2");
+    const sectionThreeText3 = document.getElementById("sectionThreeText3");
+
+    sectionThreeTitle.style.content = "Passions";
+    sectionThreeText1.style.content = "Health";
+    sectionThreeText2.style.content = "Sustainability";
+    sectionThreeText3.style.content = "Transition Design";
+  }
+</script>

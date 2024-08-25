@@ -1,13 +1,52 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 24px;
-  color: $c-primary;
-  font-size: $s-14;
-  position: absolute;
-  bottom: 0;
+  color: $c-black;
+  font-size: $s-12;
+  font-weight: $fw-regular;
   width: 100%;
-  height: 60px;
+  padding: $s-24 0;
+
+  @media only screen and (min-width: 768px) {
+    padding: $s-32 0;
+  }
+
+  &__text {
+    display: flex;
+    font-size: $s-12;
+    gap: $s-6;
+    align-items: center;
+  }
+
+  &__circle {
+    height: $s-12;
+    width: $s-12;
+    background-color: $c-black;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid $c-light-gray;
+    z-index: 999;
+  }
+
+  &__heartbeat {
+    position: absolute;
+    width: fit-content;
+    background-color: $c-light-gray;
+    border-radius: 40px;
+    height: $s-12;
+    width: $s-12;
+    opacity: 0.75;
+    animation: ping 1s cubic-bezier(0, 0, 1, 1) infinite;
+  }
+
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(1.7);
+      opacity: 0;
+    }
+  }
 }
