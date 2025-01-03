@@ -4,10 +4,17 @@
   padding: 0;
 }
 
+.emoji {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+    sans-serif;
+  font-size: 1em;
+}
+
 html,
 body {
   height: 100%;
-  background-color: $c-light-beige !important;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -15,7 +22,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: auto $s-16;
 
   @media only screen and (min-width: 768px) {

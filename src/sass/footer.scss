@@ -22,19 +22,19 @@
   }
 
   &__circle {
-    height: $s-12;
-    width: $s-12;
-    background-color: $c-black;
+    height: $s-6;
+    width: $s-6;
+    background-color: #a8f67e;
     border-radius: 50%;
     display: inline-block;
-    border: 2px solid $c-light-gray;
+    border: 2px solid #dffbd0;
     z-index: 999;
   }
 
   &__heartbeat {
     position: absolute;
     width: fit-content;
-    background-color: $c-light-gray;
+    background-color: #dffbd0;
     border-radius: 40px;
     height: $s-12;
     width: $s-12;

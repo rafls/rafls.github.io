@@ -1,0 +1,47 @@
+.project {
+  margin-top: $s-32;
+
+  &__content {
+    color: $c-dark-gray;
+    width: 100%;
+    line-height: 130%;
+
+    @media only screen and (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+
+  &__introduction {
+    display: flex;
+    flex-direction: column;
+    color: $c-black;
+  }
+
+  &__title {
+    font-size: $s-16;
+    font-weight: $fw-medium;
+    color: $c-black;
+    line-height: 100%;
+  }
+
+  &__subtitle {
+    font-size: $s-14;
+    font-weight: $fw-medium;
+    color: $c-black;
+  }
+
+  &__text {
+    font-size: $s-14;
+    font-weight: $fw-regular;
+  }
+
+  &__image-medium {
+    width: 70%;
+    height: auto;
+  }
+
+  &__image-large {
+    width: 100%;
+    height: auto;
+  }
+}

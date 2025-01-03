@@ -1,0 +1,292 @@
+---
+import Header from "../components/header.astro"
+import Tags from "../components/tags.astro"
+import { Image } from 'astro:assets';
+import moodboard from '../../public/images/moodboard.png';
+import generalLayout from '../../public/images/general-layout.png';
+import wLogin from '../../public/images/w-login.png';
+import wSimulator from '../../public/images/w-simulator.png';
+import wImpact from '../../public/images/w-impact.png';
+import wWallet from '../../public/images/w-wallet.png';
+import wForm from '../../public/images/w-form.png';
+import wChat from '../../public/images/w-chat.png';
+import wDeals from '../../public/images/w-deals.png';
+import mResellGeneral from '../../public/images/m-resell-general01.png';
+import mResell01 from '../../public/images/m-resell01.png';
+import mResell02 from '../../public/images/m-resell02.png';
+import mResell03 from '../../public/images/m-resell03.png';
+import mResell04 from '../../public/images/m-resell04.png';
+import mResell05 from '../../public/images/m-resell05.png';
+import mResell06 from '../../public/images/m-resell06.png';
+import mResell07 from '../../public/images/m-resell07.png';
+import bGrid from '../../public/images/b-grid.png';
+import bTypoColor from '../../public/images/b-typo-color.png';
+import formFlow from '../../public/images/form-flow.png';
+import accountFlow from '../../public/images/account-flow.png';
+import personas from '../../public/images/personas.png';
+
+import stylesUrl from "../sass/index.scss?url"
+import '@fontsource-variable/inter';
+---
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="preload" href={stylesUrl} as="style">
+    <link rel="stylesheet" href={stylesUrl}>
+    <script type="text/javascript" src="../"></script>
+  </head>
+  <body>
+    <div class="container">
+      <Header />
+      <div class="project">
+        <div class="projects__identification margin-bottom-48">
+          <p class="projects__header"> LoopOS Submission </p>
+          <div class="projects__tags">
+            <div><Tags text='UX/UI' outlined={true}/></div>
+            <div><Tags text='Mobile' outlined={true}/></div>
+            <div><Tags text='Sustainability' outlined={true}/></div>
+            <div><Tags text='Circular economy' outlined={true}/></div>
+          </div>
+        </div>
+        <div class="project__content">
+          <div class="project__case-study">
+            <div class="project__introduction">
+              <span class="project__text"><span class="font-weight-medium">Role:</span> UI/UX Designer</span>
+              <span class="project__text"><span class="font-weight-medium">Date:</span> July 2022</span>
+              <span class="project__text"><span class="font-weight-medium">Tools:</span> Figma</span>
+            </div>
+
+            <!--problem statement -->
+            <br>
+            <div class="display-column">
+              <span class="project__subtitle"> Problem Statement </span>
+              <span class="project__text"> The current LoopOS Submission platform offers a cumbersome experience on mobile devices. Users struggle when filling the form, leading to frustration and drop-offs. There is a need for a mobile-optimized version that simplifies the process, incorporates AI for product assessment and personalized recommendations, and enhances overall user satisfaction.
+              </span>
+            </div>
+            <br>
+
+            <!--research and insights -->
+            <br>
+            <br>
+            <div class="display-column">
+              <span class="project__title"> <span class="emoji">&#10055;</span> Research and Insights </span>
+              <br>
+              <!--competitors analysis -->
+              <span class="project__subtitle"> Competitors Analysis </span>
+              <span class="project__text"> The project began with a competitor analysis, examining existing form platforms focused on Resell, Returns, and Renting. None provided a comprehensive solution that combined all three elements.
+              </span>
+            </div>
+
+            <!--personas -->
+            <br>
+            <div class="display-column">
+              <span class="project__subtitle"> Personas </span>
+              <span class="project__text"> The personas were developed using existing client profiles from our existing LoopOS Submission database, analyzing user data such as demographics and behaviors. This approach ensures the personas are grounded in real user insights, providing a deeper understanding of their needs, goals, and pain points — while prioritizing privacy at every step.
+              </span>
+              <br>
+              <br>
+              <a href="../../public/images/personas.png" target="blank">
+                <Image src={personas} class="project__image-large" alt="personas" />
+              </a>
+            </div>
+
+            <!--ia -->
+            <br>
+            <br>
+            <div class="display-column">
+              <span class="project__subtitle"> Information Architecture </span>
+              <br>
+              <a href="../../public/images/form-flow.png" target="blank">
+                <Image src={formFlow} class="project__image-large" alt="form flow" />
+              </a>
+              <a href="../../public/images/account-flow.png" target="blank">
+                <Image src={accountFlow} class="project__image-large" alt="account flow" />
+              </a>
+            </div>
+
+              <!--moodboard -->
+              <br>
+              <br>
+              <div class="display-column">
+                <span class="project__subtitle"> Moodboard </span>
+                <br>
+                <a href="../../public/images/moodboard.png" target="blank">
+                  <Image src={moodboard} class="project__image-large" alt="moodboard" />
+                </a>
+              </div>
+              <br>
+              <br>
+
+              <!--ideation -->
+              <br>
+              <br>
+              <br>
+              <div class="display-column">
+                <span class="project__title"><span class="emoji">&#10055;</span> Wireframes </span>
+                <br>
+                <span class="project__subtitle">Main layout</span>
+                <a href="../../public/images/general-layout.png" target="blank">
+                  <Image src={generalLayout} class="project__image-large" alt="general layout" />
+                </a>
+                <br>
+                <span class="project__subtitle">Navbar</span>
+                <span class="project__text">The navbar ensures a quick access to the menu and notification center, while identifying the platform.</span>
+                <br>
+                <span class="project__subtitle">Banner</span>
+                <span class="project__text">The banner grabs the user's attention with important messages, promotions, or calls to action, setting the tone for the page and guiding user focus.</span>
+                <br>
+                <span class="project__subtitle">Main content section</span>
+                <span class="project__text">The main content section delivers the core information or functionality of the page, displaying the different areas that constitute this platform.</span>
+                <br>
+                <span class="project__subtitle">Footer</span>
+                <span class="project__text">The footer links directly to the User Profile, Wallet and Impact pages.</span>
+                <br>
+                <br>
+                <br>
+                <span class="project__title">After analysing requirements and research the following features and pages were considered:</span>
+                <br>
+                <a href="../../public/images/w-login.png" target="blank">
+                  <Image src={wLogin} class="project__image-large" alt="wireframes login" />
+                </a>
+                <span class="project__subtitle">Login</span>
+                <span class="project__text">OAuth providers for social logins to ensure a quick and effortless authentication flow.</span>
+                <br>
+                
+                <br>
+                <a href="../../public/images/w-simulator.png" target="blank">
+                  <Image src={wSimulator} class="project__image-large" alt="wireframes simulator" />
+                </a>
+                <span class="project__subtitle">Recognition of product by voice</span>
+                <span class="project__text">Voice recognition technology enables users to identify products hands-free, allowing for the simulation of the item's value before redirecting them to the form, reducing friction in the interaction.</span>
+                <br>
+
+                <br>
+                <a href="../../public/images/w-impact.png" target="blank">
+                  <Image src={wImpact} class="project__image-large" alt="wireframes impact" />
+                </a>
+                <span class="project__subtitle">Impact page</span>
+                <span class="project__text">A dashboard that would showcase the real-time sustainability impact of the user's actions, encouraging more environmentally conscious decisions. This is one of the platform's most significant value propositions.</span>
+                <br>
+
+                <br>
+                <a href="../../public/images/w-wallet.png" target="blank">
+                  <Image src={wWallet} class="project__image-large" alt="wireframes wallet" />
+                </a>
+                <span class="project__subtitle">Wallet page</span>
+                <span class="project__text">A wallet page to manage transaction tracking and display credit movements for users.</span>
+                <br>
+
+                <br>
+                <a href="../../public/images/w-form.png" target="blank">
+                  <Image src={wForm} class="project__image-large" alt="wireframes form" />
+                </a>
+                <span class="project__subtitle">Resell, Renting and Returns</span>
+                <span class="project__text">AI-optimized forms and item pages for Resell, Renting, and Returns to enhance user experience by streamlining data entry, personalizing interactions, and providing dynamic, context-driven information tailored to each transaction.</span>
+                <br>
+
+                <br>
+                <a href="../../public/images/w-chat.png" target="blank">
+                  <Image src={wChat} class="project__image-large" alt="wireframes form" />
+                </a>
+                <span class="project__subtitle">Chat</span>
+                <span class="project__text">A chat enables real-time communication between clients and store operators, enhancing customer support.
+                </span>
+                <br>   
+
+                <br>
+                <a href="../../public/images/w-deals.png" target="blank">
+                  <Image src={wDeals} class="project__image-large" alt="wireframes form" />
+                </a>
+                <span class="project__subtitle">"Member get member" and Hot deals</span>
+                <span class="project__text">These features encourage user engagement and drive referrals, while offering exclusive promotions to enhance customer retention and satisfaction.
+                </span>
+                <br>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="display-column">
+                <span class="project__title"> <span class="emoji">&#10035;</span> Styleguide </span> 
+                <br>
+                <br>
+                <span class="project__subtitle">Typography and color</span>
+                <br>
+                <a href="../../public/images/b-typo-color.png" target="blank">
+                  <Image src={bTypoColor} class="project__image-large" alt="typography and color" />
+                </a> 
+                <br>
+                <br>
+                <span class="project__subtitle">Grid</span>
+                <br>
+                <a href="../../public/images/b-grid.png" target="blank">
+                  <Image src={bGrid} class="project__image-large" alt="grid" />
+                </a>           
+              </div>
+              <br>
+              <br>
+              <br>
+              <div class="display-column">
+                <span class="project__title"> <span class="emoji">&#10035;</span> High-Fidelity Mockups </span>
+                <br>
+                <a href="../../public/images/m-resell-general01.png" target="blank">
+                  <Image src={mResellGeneral} class="project__image-large" alt="mockups resell" />
+                </a>
+                <br>
+                <br>
+                <span class="project__subtitle">Resell</span>
+                <br>
+                <a href="../../public/images/m-resell01.png" target="blank">
+                  <Image src={mResell01} class="project__image-large" alt="mockups resell" />
+                </a>
+                <a href="../../public/images/m-resell02.png" target="blank">
+                  <Image src={mResell02} class="project__image-large" alt="mockups resell" />
+                </a>
+                <a href="../../public/images/m-resell03.png" target="blank">
+                  <Image src={mResell03} class="project__image-large" alt="mockups resell" />
+                </a>
+                <a href="../../public/images/m-resell04.png" target="blank">
+                  <Image src={mResell04} class="project__image-large" alt="mockups resell" />
+                </a>
+                <a href="../../public/images/m-resell05.png" target="blank">
+                  <Image src={mResell05} class="project__image-large" alt="mockups resell" />
+                </a>
+                <a href="../../public/images/m-resell06.png" target="blank">
+                  <Image src={mResell06} class="project__image-large" alt="mockups resell" />
+                </a>
+                <a href="../../public/images/m-resell07.png" target="blank">
+                  <Image src={mResell07} class="project__image-large" alt="mockups resell" />
+                </a>
+                <!-- <br>
+                <span class="project__subtitle">Returns</span>
+                <br>
+                <span class="project__subtitle">Renting</span> -->
+                <br>
+                <span class="project__subtitle">Simplified form layout</span>
+                <span class="project__text">The form was restructured into easily digestible sections with clear labels and step-by-step navigation to reduce cognitive load and eliminate confusion.</span>
+                <br>
+                <span class="project__subtitle">Mobile-friendly UI</span>
+                <span class="project__text">Elements were resized and repositioned to ensure a seamless user experience on smaller screens, with larger touch targets and responsive design to prevent frustration during input.</span>
+                <br>
+                <span class="project__subtitle">AI Integration for Product Assessment</span>
+                <span class="project__text">Some AI-powered features like recognition by voice and image were added that provided real-time product suggestions and assessments, based on user input. This personalized assistance helped users make more informed decisions, improving engagement.</span>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <span class="project__text"> The primary goal was to optimize the mobile experience, making it more intuitive and efficient for users to navigate the submission process. By integrating AI-driven features, we enhanced the user journey with personalized recommendations, automated product assessments, and improved submission workflows - resulting in a seamless and quicker mobile experience.</span>
+                <br>
+                <hr>    
+                <br>
+                <br>
+                <br>
+                <br>        
+              </div>
+          </div>
+        </div>
+      </div>
+  </body>
+
+</html>

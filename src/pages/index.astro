@@ -13,28 +13,28 @@ import '@fontsource-variable/inter';
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link rel="preload" href={stylesUrl} as="style">
     <link rel="stylesheet" href={stylesUrl}>
+    <script type="text/javascript" src="../"></script>
   </head>
   <body>
     <div class="container">
-      <!-- <div><Header /></div> -->
+      <Header />
       <div class="home">
-        <div class="home__header">
-          <span class="home__name-header"> Rafaela Silva </span>
-          <div class="home__tags">
-            <div>
-              <Tags text='✍🏻 5 years of experience' outlined={false}/>
-            </div>
-            <div>
-              <Tags text='🌍 Based in Portugal' outlined={false} />
-            </div>
-          </div>
-        </div>
         <div class="home__top">
           <div class="home__presentation-top">
             <div class="home__introduction">
-              <div>
-                <span class="home__name"> Rafaela Silva </span>
-                <span class="home__name"> ✱ </span>
+              <div class="home__introduction--top">
+                <div>
+                  <span class="home__name"> Rafaela Silva </span>
+                  <span class="home__name"> ✱ </span>
+                </div>
+                <div class="home__tags">
+                  <div>
+                    <Tags text='✍🏻 5 years of experience' outlined={true}/>
+                  </div>
+                  <div>
+                    <Tags text='🌍 Open to move aboard' outlined={true} />
+                  </div>
+                </div>
               </div>
               <span class="home__text">
                 UX/UI Designer and Frontend developer <br />

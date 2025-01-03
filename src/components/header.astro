@@ -1,6 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import arrow from '../../public/images/arrow-up-right-regular.svg';
+
+import stylesUrl from "../sass/index.scss?url"
+import '@fontsource-variable/inter';
+---
+
 <div class="header">
-  <a href="">HOME</a>
-  <a href="about">ABOUT</a>
-  <a href="">WORK</a>
-  <a href="cv">CV</a>
+  <a href="/">Home</a>
+  <!-- <a href="projects">Case studies</a> -->
+  <a href="../../public/images/rafls-resume.pdf">
+    <div class="header__resume">
+      <span>Resume</span>
+      <Image src={arrow} class="header__arrow" alt="arrow up right" />
+    </div> 
+  </a>
 </div>
