@@ -23,7 +23,7 @@
   }
 
   &__resume {
-    border: 1px solid $c-black;
+    border: 1px solid $c-dark-gray;
     padding: $s-4 $s-6;
     border-radius: $s-24;
     display: flex;
@@ -33,12 +33,7 @@
     gap: $s-2;
 
     &:hover {
-      background-color: $c-black;
-      color: $c-white;
-
-      .header__arrow {
-        filter: invert(1);
-      }
+      background-color: $c-light-beige;
     }
   }
 }

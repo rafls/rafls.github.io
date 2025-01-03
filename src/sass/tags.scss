@@ -7,12 +7,13 @@
   padding: $s-2 $s-8;
 
   &__filled {
-    background-color: $c-foam;
+    background-color: $c-light-beige;
+    border: 1px solid $c-gray;
     color: $c-black;
   }
 
   &__outlined {
-    border: 1px solid $c-dark-gray;
+    border: 1px solid $c-gray;
     color: $c-black;
   }
 }
