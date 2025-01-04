@@ -1,0 +1,22 @@
+---
+import Header from "../components/header.astro"
+
+import stylesUrl from "../sass/index.scss?url"
+import '@fontsource-variable/inter';
+---
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="preload" href={stylesUrl} as="style">
+    <link rel="stylesheet" href={stylesUrl}>
+    <script type="text/javascript" src="../"></script>
+  </head>
+  <body>
+    <div class="container">
+      <Header />
+    </div>
+  </body>
+</html>
