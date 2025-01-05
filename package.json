@@ -16,5 +16,8 @@
     "posthog-js": "^1.157.2",
     "sass": "^1.77.8",
     "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "staticrypt": "^3.5.0"
   }
 }

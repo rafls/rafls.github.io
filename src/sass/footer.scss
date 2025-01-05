@@ -4,8 +4,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: $c-black;
-  font-size: $s-12;
   font-weight: $fw-regular;
   width: 100%;
   padding: $s-24 0;
@@ -16,9 +14,14 @@
 
   &__text {
     display: flex;
-    font-size: $s-12;
+    font-size: $s-10;
+    color: $c-black;
     gap: $s-6;
     align-items: center;
+
+    @media only screen and (min-width: 768px) {
+      font-size: $s-12;
+    }
   }
 
   &__circle {
