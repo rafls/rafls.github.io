@@ -14,7 +14,8 @@
         <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
         <meta http-equiv="pragma" content="no-cache" />
 
-        <style>
+        <style lang="scss">
+
             .staticrypt-hr {
                 margin-top: 20px;
                 margin-bottom: 20px;
@@ -34,10 +35,11 @@
                 z-index: 1;
                 background: #ffffff;
                 max-width: 360px;
+                border-radius: 6px;
                 margin: 0 auto 100px;
                 padding: 45px;
                 text-align: center;
-                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+                box-shadow: 0 0 20px 0 rgba(57, 57, 57, 0.2), 0 5px 5px 0 rgba(56, 56, 56, 0.24);
             }
 
             .staticrypt-form input[type="password"],
@@ -59,6 +61,7 @@
                 border: 0;
                 margin: 0 0 15px;
                 box-sizing: border-box;
+                border-radius: 4px;
             }
 
             .staticrypt-toggle-password-visibility {
@@ -74,27 +77,28 @@
             }
 
             .staticrypt-form .staticrypt-decrypt-button {
-                text-transform: uppercase;
                 outline: 0;
-                background-color: $c-black;
-                border-radius: $s-8;
+                background-color: #101010;
+                border-radius: 8px;
                 width: 100%;
                 border: 0;
                 padding: 15px;
-                color: $c-white;
+                color: #FFFFFF;
                 font-size: 14px;
                 cursor: pointer;
+                font-weight: 500;
             }
 
             .staticrypt-form .staticrypt-decrypt-button:hover,
             .staticrypt-form .staticrypt-decrypt-button:active,
             .staticrypt-form .staticrypt-decrypt-button:focus {
-                background-color; $c-black;
+                background-color: #101010;
                 filter: brightness(92%);
             }
 
             .staticrypt-html {
                 height: 100%;
+                background-color: rgb(247, 244, 239);
             }
 
             .staticrypt-body {
@@ -113,17 +117,22 @@
 
             .staticrypt-instructions {
                 margin-top: -1em;
-                margin-bottom: 1em;
+                margin-bottom: 12px;
             }
 
             .staticrypt-title {
                 font-size: 1.5em;
             }
 
+            .staticrypt-description {
+                font-size: 14px;
+                color: #888888;
+            }
+
             label.staticrypt-remember {
                 display: flex;
                 align-items: center;
-                margin-bottom: 1em;
+                margin-bottom: 1.5em;
             }
 
             .staticrypt-remember input[type="checkbox"] {
@@ -180,7 +189,7 @@
                 <div class="staticrypt-form">
                     <div class="staticrypt-instructions">
                         <p class="staticrypt-title">RS ✱ Case Study</p>
-                        <p> This is a protected page. Ask for the password to access it.</p>
+                        <p class="staticrypt-description"> This is a protected page. <br> Ask for the password to access it.</p>
                     </div>
 
                     <hr class="staticrypt-hr" />

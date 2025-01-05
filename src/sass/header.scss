@@ -12,7 +12,15 @@
     color: $c-black;
 
     &:hover {
-      color: $c-black;
+      color: $c-gray;
+    }
+  }
+
+  &__home {
+    font-size: $s-14;
+
+    &:hover {
+      color: $c-black !important;
     }
   }
 
@@ -41,6 +49,7 @@
 
     &:hover {
       background-color: $c-light-beige;
+      color: $c-black;
     }
   }
 }

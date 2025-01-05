@@ -10,6 +10,7 @@ $c-light-beige: #edeceb;
 $c-dark-gray: #515151;
 $c-gray: #808080;
 $c-light-gray: #cccccc;
+$c-background: #f7f4ef;
 
 // sizes
 
@@ -54,6 +55,10 @@ $fw-bold: 700;
 
 .text-gray {
   color: $c-gray;
+}
+
+.text-black {
+  color: $c-black;
 }
 
 // font-size

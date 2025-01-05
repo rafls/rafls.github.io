@@ -15,7 +15,7 @@ body {
   height: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  background-color: rgb(247, 244, 239);
+  background-color: $c-background;
 }
 
 .container {
@@ -37,4 +37,12 @@ body {
 ul {
   list-style: none;
   padding-left: 0 !important;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $c-light-gray;
+  margin: 1em 0;
+  padding: 0;
 }
