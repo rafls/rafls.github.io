@@ -3,14 +3,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   font-weight: $fw-regular;
-  width: 100%;
-  padding: $s-24 0;
-
-  @media only screen and (min-width: 768px) {
-    padding: $s-32 0;
-  }
+  padding: $s-24 0 $s-8 0;
 
   &__text {
     display: flex;
@@ -25,13 +19,14 @@
   }
 
   &__circle {
-    height: $s-6;
-    width: $s-6;
+    height: $s-8;
+    width: $s-8;
     background-color: #70cd3e;
     border-radius: 50%;
     display: inline-block;
     border: 2px solid #a8f67e;
     z-index: 999;
+    position: relative;
   }
 
   &__heartbeat {
@@ -51,5 +46,63 @@
       transform: scale(1.7);
       opacity: 0;
     }
+  }
+}
+
+.scroller {
+  max-width: 100%;
+  font-size: $s-24;
+  border-top: 1px solid $c-light-gray;
+  color: $c-dark-gray;
+
+  &:hover {
+    color: $c-black;
+  }
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }

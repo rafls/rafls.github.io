@@ -24,9 +24,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto $s-16;
+  height: 100%;
 
   @media only screen and (min-width: 768px) {
-    margin: auto $s-56;
+    margin: auto $s-40;
   }
 }
 

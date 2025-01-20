@@ -1,6 +1,59 @@
 <div class="footer">
-  <div class="footer__text">
+  <!-- <div class="footer__text">
     <span class="footer__heartbeat"></span>
     <span class="footer__circle"></span>PORTFOLIO UNDER CONSTRUCTION
+  </div> -->
+
+  <div class="scroller" data-speed="slow">
+    <ul class="tag-list scroller__inner">
+      <li> Adobe Suite </li>
+      <li> ✦ </li>
+      <li> Design Systems </li>
+      <li> ✦ </li>
+      <li> Figma </li>
+      <li> ✦ </li>
+      <li> Git </li>
+      <li> ✦ </li>
+      <li> HTML & CSS </li>
+      <li> ✦ </li>
+      <li> Print Design </li>
+      <li> ✦ </li>
+      <li> React </li>
+      <li> ✦ </li>
+      <li> Ruby on Rails </li>
+      <li> ✦ </li>
+      <li> UX/UI </li>
+      <li> ✦ </li>
+      <li> Graphic Design </li>
+      <li> ✦ </li>
+    </ul>
   </div>
-</div>
+
+  <script>
+    const scrollers = document.querySelectorAll(".scroller");
+
+  // If a user hasn't opted in for recuded motion, then we add the animation
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+  }
+
+  function addAnimation() {
+    scrollers.forEach((scroller) => {
+      // add data-animated="true" to every `.scroller` on the page
+      scroller.setAttribute("data-animated", true);
+
+      // Make an array from the elements within `.scroller-inner`
+      const scrollerInner = scroller.querySelector(".scroller__inner");
+      const scrollerContent = Array.from(scrollerInner.children);
+
+      // For each item in the array, clone it
+      // add aria-hidden to it
+      // add it into the `.scroller-inner`
+      scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        duplicatedItem.setAttribute("aria-hidden", true);
+        scrollerInner.appendChild(duplicatedItem);
+      });
+    });
+  }
+  </script>
