@@ -11,10 +11,13 @@
     align-items: left;
     gap: $s-16;
     text-decoration: none;
+    color: inherit;
 
     @media only screen and (min-width: 768px) {
       flex-direction: row;
       align-items: center;
+      text-decoration: none;
+      color: inherit;
     }
   }
 
