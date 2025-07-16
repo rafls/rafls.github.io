@@ -28,13 +28,13 @@ jobs:
           cache-dependency-path: "package-lock.json"
       - name: Install and build
         run: npm install && npm run build
-      # - name: Encrypt case studies
-      #   run: >
-      #     npx staticrypt
-      #     dist/submission/index.html
-      #     -d dist/submission
-      #     -t dist/auth/index.html
-      #     -p ${{ secrets.DECRYPTION_PASSPHRASE }}
+      - name: Encrypt case studies
+        run: >
+          npx staticrypt
+          dist/submission/index.html
+          -d dist/submission
+          -t dist/auth/index.html
+          -p ${{ secrets.DECRYPTION_PASSPHRASE }}
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:

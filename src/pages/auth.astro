@@ -212,10 +212,10 @@
                             />
                         </div>
 
-                        <!-- <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
+                        <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
                             <input id="staticrypt-remember" type="checkbox" name="remember" />
                             /*[|template_remember|]*/0
-                        </label> -->
+                        </label>
 
                         <input type="submit" class="staticrypt-decrypt-button" value="Submit" />
                     </form>
@@ -229,7 +229,6 @@
             const templateError = "/*[|template_error|]*/0",
                 templateToggleAltShow = "/*[|template_toggle_show|]*/0",
                 templateToggleAltHide = "/*[|template_toggle_hide|]*/0",
-                isRememberEnabled = /*[|is_remember_enabled|]*/ 0,
                 staticryptConfig = /*[|staticrypt_config|]*/ 0;
 
             // you can edit these values to customize some of the behavior of StatiCrypt
@@ -254,11 +253,6 @@
                     document.getElementById("staticrypt_loading").classList.add("hidden");
                     document.getElementById("staticrypt_content").classList.remove("hidden");
                     document.getElementById("staticrypt-password").focus();
-
-                    // show the remember me checkbox
-                    if (isRememberEnabled) {
-                        document.getElementById("staticrypt-remember-label").classList.remove("hidden");
-                    }
                 }
             };
 
