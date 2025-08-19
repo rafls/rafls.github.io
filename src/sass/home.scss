@@ -4,6 +4,7 @@
   gap: $s-72;
   margin: 0px 0px auto 0px;
   height: 100%;
+  color: $c-black;
 
   @media only screen and (min-width: 768px) {
     gap: $s-96;
@@ -28,6 +29,7 @@
     flex-direction: column;
     background-color: #efeee8;
     height: 100%;
+    border: 1px solid $c-gray;
     border-radius: $s-16;
     padding: $s-24;
 
@@ -52,21 +54,23 @@
     }
   }
 
-  &__text {
-    font-size: $s-32;
-    font-weight: $fw-regular;
-
-    @media only screen and (min-width: 768px) {
-      font-size: $s-48;
-    }
-  }
-
-  &__text-highlight {
+  &__role {
     font-size: $s-32;
     font-weight: $fw-medium;
 
     @media only screen and (min-width: 768px) {
-      font-size: $s-48;
+      font-size: $s-40;
+    }
+  }
+
+  &__focus {
+    font-size: $s-24;
+    font-weight: $fw-regular;
+    line-height: normal;
+    color: $c-black;
+
+    @media only screen and (min-width: 768px) {
+      font-size: $s-32;
     }
   }
 
