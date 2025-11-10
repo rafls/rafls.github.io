@@ -10,6 +10,21 @@
     gap: $s-96;
   }
 
+  &__image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+
+    @media only screen and (min-width: 768px) {
+      right: 0;
+      top: 0px;
+      width: auto;
+      height: 100vh;
+    }
+  }
+
   &__shape-container {
     display: inline-block;
     position: relative;
@@ -27,7 +42,8 @@
   &__top {
     display: flex;
     flex-direction: column;
-    background-color: #efeee8;
+    background-color: rgba(239, 239, 239, 0.5);
+    backdrop-filter: blur(5px);
     height: 100%;
     border: 1px solid $c-light-gray;
     border-radius: $s-16;
@@ -56,7 +72,8 @@
 
   &__role {
     font-size: $s-32;
-    font-weight: $fw-medium;
+    font-weight: $fw-regular;
+    color: $c-black;
 
     @media only screen and (min-width: 768px) {
       font-size: $s-40;
@@ -64,13 +81,13 @@
   }
 
   &__focus {
-    font-size: $s-24;
-    font-weight: $fw-regular;
-    line-height: normal;
-    color: $c-black;
+    font-size: $s-16;
+    font-weight: $fw-light;
+    line-height: 1.5;
+    color: $c-dark-gray;
 
     @media only screen and (min-width: 768px) {
-      font-size: $s-32;
+      font-size: $s-24;
     }
   }
 

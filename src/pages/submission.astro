@@ -25,6 +25,7 @@ import personas from '../../public/images/personas.png';
 
 import stylesUrl from "../sass/index.scss?url"
 import '@fontsource-variable/inter';
+import Footer from "../components/footer.astro";
 ---
 
 <!DOCTYPE html>
@@ -41,7 +42,7 @@ import '@fontsource-variable/inter';
       <Header />
       <div class="project">
         <div class="projects__identification margin-bottom-48">
-          <p class="projects__header"> LoopOS Submission </p>
+          <p class="projects__header projects__header--scale"> LoopOS Submission </p>
           <div class="projects__tags">
             <div><Tags text='UX/UI' outlined={true}/></div>
             <div><Tags text='Mobile' outlined={true}/></div>
@@ -285,6 +286,7 @@ import '@fontsource-variable/inter';
           </div>
         </div>
       </div>
+      <Footer />
   </body>
 
 </html>

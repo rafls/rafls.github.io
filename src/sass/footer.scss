@@ -1,10 +1,13 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   font-weight: $fw-regular;
-  padding: $s-24 0 $s-8 0;
+  padding: $s-16 0 $s-16 0;
+  font-weight: $fw-light;
+  color: $c-black;
+  font-size: $s-14;
 
   &__text {
     display: flex;

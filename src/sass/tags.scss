@@ -13,13 +13,10 @@
   }
 
   &__outlined {
-    // border: 1px solid $c-gray;
-    // color: $c-black;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 3px 20px rgba(70, 70, 70, 0.1);
-    transition: background 0.3s ease;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: $s-16;
+    background-color: $c-light-beige;
+    border: 1px solid $c-light-gray;
   }
 }
