@@ -42,14 +42,14 @@
   }
 
   &__header {
-    font-size: $s-24;
-    color: $c-black;
+    font-size: $s-2;
+    color: $c-dark-gray;
     font-weight: $fw-light;
     line-height: 100%;
     width: 100%;
 
     @media only screen and (min-width: 768px) {
-      font-size: $s-56;
+      font-size: $s-48;
     }
   }
 

@@ -42,15 +42,15 @@
   &__top {
     display: flex;
     flex-direction: column;
-    background-color: rgba(239, 239, 239, 0.5);
+    // background-color: rgba(239, 239, 239, 0.5);
     backdrop-filter: blur(5px);
     height: 100%;
-    border: 1px solid $c-light-gray;
-    border-radius: $s-16;
-    padding: $s-24;
+    // border: 1px solid $c-light-gray;
+    // border-radius: $s-16;
+    padding-top: $s-24;
 
     @media only screen and (min-width: 768px) {
-      padding: $s-56;
+      padding-top: $s-56;
     }
   }
 
@@ -59,7 +59,7 @@
     flex-direction: column;
     gap: $s-16;
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: $s-40;
 
     &--top {
       width: 100%;
@@ -73,21 +73,26 @@
   &__role {
     font-size: $s-32;
     font-weight: $fw-regular;
-    color: $c-black;
+    color: $c-dark-gray;
+    font-family: customFont;
 
     @media only screen and (min-width: 768px) {
-      font-size: $s-40;
+      font-size: $s-48;
+    }
+
+    &--italic {
+      font-family: customFontItalic;
     }
   }
 
   &__focus {
-    font-size: $s-16;
-    font-weight: $fw-light;
+    font-size: $s-32;
+    font-weight: $fw-regular;
     line-height: 1.5;
     color: $c-dark-gray;
 
     @media only screen and (min-width: 768px) {
-      font-size: $s-24;
+      font-size: $s-20;
     }
   }
 
@@ -144,6 +149,32 @@
     @media only screen and (min-width: 1024px) {
       justify-content: flex-end;
       height: 224px;
+    }
+  }
+
+  &__project-images {
+    display: flex;
+    flex-direction: column;
+    gap: $s-16;
+    justify-content: space-between;
+
+    @media only screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  &__project-image {
+    display: flex;
+    flex-direction: column;
+    gap: $s-8;
+    width: 100%;
+    height: auto;
+    color: $c-dark-gray;
+    font-weight: $fw-light;
+    font-size: $s-14;
+
+    &:hover {
+      opacity: 0.8;
     }
   }
 

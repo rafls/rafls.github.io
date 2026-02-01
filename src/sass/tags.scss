@@ -5,6 +5,7 @@
   border-radius: $s-16;
   width: fit-content;
   padding: $s-2 $s-8;
+  font-size: $s-14;
 
   &__filled {
     background-color: $c-light-beige;
@@ -16,7 +17,7 @@
     background-color: transparent;
     backdrop-filter: blur(5px);
     border-radius: $s-16;
-    background-color: $c-light-beige;
     border: 1px solid $c-light-gray;
+    color: $c-dark-gray;
   }
 }

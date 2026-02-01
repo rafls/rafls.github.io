@@ -3,13 +3,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: $s-24 0px;
+  padding: $s-20 $s-40;
   font-size: $s-14;
+  border-bottom: 1px solid $c-light-gray;
 
   a {
     text-decoration: none;
     color: $c-black;
+
+    &:hover {
+      color: $c-gray;
+    }
   }
 
   &__home {

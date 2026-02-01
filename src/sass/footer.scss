@@ -1,10 +1,10 @@
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   font-weight: $fw-regular;
-  padding: $s-16 0 $s-16 0;
+  padding: $s-24 $s-40;
   font-weight: $fw-light;
   color: $c-black;
   font-size: $s-14;
@@ -18,6 +18,17 @@
 
     @media only screen and (min-width: 768px) {
       font-size: $s-12;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: $s-14;
+    color: $c-black;
+    font-weight: $fw-regular;
+
+    &:hover {
+      color: $c-gray;
     }
   }
 
