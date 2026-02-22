@@ -34,8 +34,9 @@ import '@fontsource-variable/inter';
     </script>
   </head>
   <body>
-    <Header />
-    <div class="container">
+    <div>
+      <Header />
+      <div class="container">
       <div class="home">
         <div class="home__top">
           <div class="home__introduction">
@@ -60,7 +61,10 @@ import '@fontsource-variable/inter';
           <div class="home__project-images">
             <div class="home__project-image">
               <Image src={loopOS} class="project__image-large" alt="mockups" />
-              <span class="custom-font"> The circular economy ERP </span>
+              <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <span class="custom-font"> The circular economy ERP </span>
+                <span class="custom-font text-gray"> 2022-2026 </span>
+              </div>
             </div>
             <div class="home__project-image">
               <Image src={aiForm} class="project__image-large" alt="mockups" />

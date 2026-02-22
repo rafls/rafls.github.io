@@ -19,11 +19,12 @@ import Footer from "../components/footer.astro";
     <script type="text/javascript" src="../"></script>
   </head>
   <body>
-    <Header />
-    <div class="container">
-      <div class="projects">
+    <div>
+      <Header />
+      <div class="container">
+        <div class="projects">
 
-        <div class="projects__project">
+          <div class="projects__project">
           <a class="projects__identification" href="/submission">
             <p class="projects__header"> AI-powered Form for Marketplace </p>
             <div class="projects__tags">
@@ -34,9 +35,9 @@ import Footer from "../components/footer.astro";
             </div>
             <Image src={arrow} class="projects__arrow" alt="arrow up right" />
           </a>
-        </div>
+          </div>
         
-        <div class="projects__project">
+          <div class="projects__project">
           <a class="projects__identification" href="/submission">
             <p class="projects__header"> LoopOS Circular Economy </p>
             <div class="projects__tags">
@@ -46,10 +47,10 @@ import Footer from "../components/footer.astro";
             </div>
             <Image src={arrow} class="projects__arrow" alt="arrow up right" />
           </a>
-        </div>
+          </div>
          
 
-        <div class="projects__project">
+          <div class="projects__project">
           <a class="projects__identification" href="/submission">
             <p class="projects__header"> Portuguese Healthcare </p>
             <div class="projects__tags">
@@ -59,10 +60,12 @@ import Footer from "../components/footer.astro";
             </div>
             <Image src={arrow} class="projects__arrow" alt="arrow up right" />
           </a>
-        </div>
+          </div>
         
+        </div>
+    
       </div>
-    <Footer />
     </div>
+    <Footer />
   </body>
-  </html>
+</html>

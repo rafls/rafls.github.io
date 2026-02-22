@@ -16,18 +16,20 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background-color: $c-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
   position: relative;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin: auto $s-16;
+  margin: $s-40;
   height: 100%;
 
   @media only screen and (min-width: 768px) {
-    margin: auto $s-40;
+    margin: $s-72 $s-40;
   }
 }
 

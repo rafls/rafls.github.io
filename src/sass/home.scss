@@ -44,11 +44,6 @@
     flex-direction: column;
     backdrop-filter: blur(5px);
     height: 100%;
-    padding-top: $s-24;
-
-    @media only screen and (min-width: 768px) {
-      padding-top: $s-56;
-    }
   }
 
   &__introduction {
@@ -72,10 +67,6 @@
     font-weight: $fw-regular;
     line-height: 1.5;
     color: $c-dark-gray;
-
-    @media only screen and (min-width: 768px) {
-      font-size: $s-20;
-    }
   }
 
   &__presentation-bottom {
