@@ -47,6 +47,10 @@ $fw-bold: 700;
 
 // font-weight
 
+.font-weight-light {
+  font-weight: $fw-light;
+}
+
 .font-weight-medium {
   font-weight: $fw-medium;
 }
@@ -69,6 +73,10 @@ $fw-bold: 700;
 
 .font-size-14 {
   font-size: $s-14;
+}
+
+.font-size-20 {
+  font-size: $s-20;
 }
 
 // display

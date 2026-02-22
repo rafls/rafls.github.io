@@ -24,17 +24,18 @@ import Footer from "../components/footer.astro";
       <div class="container">
         <div class="projects">
 
+          <span class="text-gray" id="section-sustainability"> Sustainability </span>
           <div class="projects__project">
-          <a class="projects__identification" href="/submission">
-            <p class="projects__header"> AI-powered Form for Marketplace </p>
-            <div class="projects__tags">
-              <div><Tags text='Product' outlined={true}/></div>
-              <div><Tags text='AI' outlined={true}/></div>
-              <div><Tags text='Sustainability' outlined={true}/></div>
-              <div><Tags text='Circular economy' outlined={true}/></div>
-            </div>
-            <Image src={arrow} class="projects__arrow" alt="arrow up right" />
-          </a>
+            <a class="projects__identification" href="/submission">
+              <p class="projects__header"> AI-powered Form for Marketplace </p>
+              <div class="projects__tags">
+                <div><Tags text='Product' outlined={true}/></div>
+                <div><Tags text='AI' outlined={true}/></div>
+                <div><Tags text='Sustainability' outlined={true}/></div>
+                <div><Tags text='Circular economy' outlined={true}/></div>
+              </div>
+              <!-- <Image src={arrow} class="projects__arrow" alt="arrow up right" /> -->
+            </a>
           </div>
         
           <div class="projects__project">
@@ -45,25 +46,33 @@ import Footer from "../components/footer.astro";
               <div><Tags text='Sustainability' outlined={true}/></div>
               <div><Tags text='Circular economy' outlined={true}/></div>
             </div>
-            <Image src={arrow} class="projects__arrow" alt="arrow up right" />
+            <!-- <Image src={arrow} class="projects__arrow" alt="arrow up right" /> -->
           </a>
           </div>
-         
-
+          <br>
+          <span class="text-gray" id="section-healthcare"> Portuguese Healthcare </span>
+          <div class="projects__project">
+            <a class="projects__identification" href="/cvp">
+              <p class="projects__header"> COVID-19 Testing Management Platform </p>
+              <div class="projects__tags">
+                <div><Tags text='UX/UI' outlined={true}/></div>
+                <div><Tags text='Healthcare' outlined={true}/></div>
+              </div>
+              <!-- <Image src={arrow} class="projects__arrow" alt="arrow up right" /> -->
+            </a>
+          </div>
           <div class="projects__project">
           <a class="projects__identification" href="/submission">
-            <p class="projects__header"> Portuguese Healthcare </p>
+            <p class="projects__header"> Vaccination Scheduling Platform for Pharmacies </p>
             <div class="projects__tags">
               <div><Tags text='UX/UI' outlined={true}/></div>
               <div><Tags text='Development' outlined={true}/></div>
               <div><Tags text='Healthcare' outlined={true}/></div>
             </div>
-            <Image src={arrow} class="projects__arrow" alt="arrow up right" />
+            <!-- <Image src={arrow} class="projects__arrow" alt="arrow up right" /> -->
           </a>
           </div>
-        
         </div>
-    
       </div>
     </div>
     <Footer />

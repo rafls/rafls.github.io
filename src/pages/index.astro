@@ -4,8 +4,7 @@ import Footer from "../components/footer.astro"
 import Header from "../components/header.astro"
 import Tags from "../components/tags.astro"
 import { Image } from 'astro:assets';
-import aiForm from '../../public/images/ai-form.png';
-import loopOS from '../../public/images/loopos.png';
+import sustainability from '../../public/images/ai-form.png';
 import healthcare from '../../public/images/healthcare.png';
 
 import stylesUrl from "../sass/index.scss?url"
@@ -40,12 +39,11 @@ import '@fontsource-variable/inter';
       <div class="home">
         <div class="home__top">
           <div class="home__introduction">
-            <div class="home__role">
-              ✦ Product Owner, and experienced Product Designer,
-              <br />
-              dedicated to health and sustainability projects and innovation. 
-            </div>
-
+              <span class="home__role"> Product Owner, and experienced Product Designer </span>
+              <span class="home__focus">I’m particularly enthusiastic about shaping products that drive growth  
+                <br> while being mindful of environmental impact.
+              </span>
+            
             <div class="home__introduction--top">
               <div class="home__tags">
                 <div>
@@ -60,29 +58,27 @@ import '@fontsource-variable/inter';
           </div>
           <div class="home__project-images">
             <div class="home__project-image">
-              <Image src={aiForm} class="project__image-large" alt="mockups" />
-              <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <span class="custom-font"> An AI-powered Form for a marketplace </span>
-                <span class="custom-font text-gray"> 2025 </span>
-              </div>
-            </div>
-
-            <div class="home__project-image">
-              <Image src={loopOS} class="project__image-large" alt="mockups" />
-              <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <span class="custom-font"> The circular economy ERP </span>
-                <span class="custom-font text-gray"> 2022-present </span>
+              <a href="/projects#section-sustainability">
+                <Image src={sustainability} class="project__image-large" alt="Sustainability" />
+              </a>
+              <div class="home__project-image-text">
+                <span class="custom-font"> Digital products for circular economy </span>
+                <!-- <span class="custom-font text-gray"> Product Owner/Product Designer </span> -->
               </div>
             </div>
             
             <div class="home__project-image">
-              <Image src={healthcare} class="project__image-large" alt="mockups" />
-              <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <span class="custom-font"> Portuguese Healthcare</span>
-                <span class="custom-font text-gray"> 2020-2021 </span>
+              <div class="project__image-large">
+                <a href="/projects#section-healthcare">
+                  <Image src={healthcare} class="project__image-large" alt="Healthcare" />
+                </a>
+              </div>
+              <div class="home__project-image-text">
+                <span class="custom-font"> Operational platforms for public health services in Portugal </span>
+                <!-- <span class="custom-font text-gray"> UX/UI Designer </span> -->
               </div>
             </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>

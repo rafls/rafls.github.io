@@ -1,0 +1,46 @@
+---
+import Header from "../components/header.astro"
+import Tags from "../components/tags.astro"
+import { Image } from 'astro:assets';
+
+import stylesUrl from "../sass/index.scss?url"
+import '@fontsource-variable/inter';
+import Footer from "../components/footer.astro";
+---
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="preload" href={stylesUrl} as="style">
+    <link rel="stylesheet" href={stylesUrl}>
+    <script type="text/javascript" src="../"></script>
+  </head>
+  <body>
+    <div>
+      <Header />
+      <div class="container">
+        <div class="project">
+          <div class="projects__identification margin-bottom-48">
+            <p class="projects__header projects__header--scale"> COVID-19 Testing Management Platform </p>
+            <div class="projects__tags">
+              <div><Tags text='UX/UI' outlined={true}/></div>
+              <div><Tags text='Healthcare' outlined={true}/></div>
+            </div>
+          </div>
+          <div class="project__content">
+            <div class="project__case-study">
+              <div class="project__introduction">
+                <span class="project__text"><span class="font-weight-medium">Role:</span> UI/UX Designer </span>
+                <span class="project__text"><span class="font-weight-medium">Date:</span> 2020 </span>
+                <span class="project__text"><span class="font-weight-medium">Tools:</span> Figma </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>

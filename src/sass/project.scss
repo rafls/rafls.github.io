@@ -1,6 +1,4 @@
 .project {
-  margin-top: $s-48;
-
   &__content {
     color: $c-dark-gray;
     width: 100%;
@@ -43,5 +41,8 @@
   &__image-large {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
