@@ -1,11 +1,18 @@
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: $s-20 $s-40;
+  align-items: flex-start;
+  gap: $s-8;
+  padding: $s-20 $s-32;
   font-size: $s-14;
   border-bottom: 1px solid $c-light-gray;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    padding: $s-20 $s-40;
+  }
 
   a {
     text-decoration: none;
@@ -37,10 +44,6 @@
     border: 1px solid $c-black;
     border-radius: $s-24;
     padding: $s-4 $s-6;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: end;
-    // align-items: center;
     gap: $s-2;
     background-color: transparent;
     cursor: pointer;
