@@ -4,6 +4,43 @@
   padding: 0;
 }
 
+*:not(script):not(style):not(link) {
+  opacity: 0;
+  animation: fadeInSmooth 0.9s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+
+*:nth-child(1) {
+  animation-delay: 0s;
+}
+*:nth-child(2) {
+  animation-delay: 0.05s;
+}
+*:nth-child(3) {
+  animation-delay: 0.1s;
+}
+*:nth-child(4) {
+  animation-delay: 0.15s;
+}
+*:nth-child(5) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInSmooth {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
+
 .emoji {
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
     sans-serif;
@@ -14,11 +51,12 @@ html,
 body {
   min-height: 100vh;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: visible;
   background-color: $c-background;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  scroll-behavior: smooth;
 }
 
 .container {

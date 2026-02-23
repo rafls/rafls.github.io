@@ -5,6 +5,12 @@
     gap: $s-32;
   }
 
+  &__main {
+    display: flex;
+    flex-direction: row;
+    gap: $s-56;
+  }
+
   &__content {
     color: $c-dark-gray;
     width: 100%;
@@ -42,6 +48,7 @@
     font-size: $s-14;
     font-weight: $fw-medium;
     color: $c-black;
+    scroll-margin-top: $s-24;
   }
 
   &__text {
@@ -66,5 +73,33 @@
     color: $c-gray;
     font-weight: $fw-regular;
     font-size: $s-14;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: $s-6;
+    font-size: $s-14;
+
+    a {
+      text-decoration: none;
+      color: $c-gray;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $c-light-gray;
+        cursor: pointer;
+      }
+
+      &:active {
+        color: $c-black;
+      }
+    }
   }
 }
