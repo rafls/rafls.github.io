@@ -2,16 +2,24 @@
   &__case-study {
     display: flex;
     flex-direction: column;
-    gap: $s-14;
+    gap: $s-32;
   }
 
   &__content {
     color: $c-dark-gray;
     width: 100%;
-    line-height: 130%;
+    line-height: 150%;
+
+    @media only screen and (min-width: 768px) {
+      width: 60%;
+    }
 
     @media only screen and (min-width: 1024px) {
       width: 50%;
+    }
+
+    @media only screen and (min-width: 1440px) {
+      width: 30%;
     }
   }
 

@@ -4,10 +4,14 @@
   justify-content: space-between;
   align-items: center;
   font-weight: $fw-regular;
-  padding: $s-24 $s-40;
+  padding: $s-16 $s-40;
   font-weight: $fw-light;
   color: $c-black;
   font-size: $s-14;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   &__text {
     display: flex;
