@@ -1,0 +1,126 @@
+---
+import Header from "../components/header.astro"
+import Tags from "../components/tags.astro"
+
+import stylesUrl from "../sass/index.scss?url"
+import '@fontsource-variable/inter';
+import Footer from "../components/footer.astro";
+---
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="preload" href={stylesUrl} as="style">
+    <link rel="stylesheet" href={stylesUrl}>
+    <script type="text/javascript" src="../"></script>
+  </head>
+  <body>
+    <div>
+      <Header />
+      <div class="container">
+        <div class="project">
+          <div class="projects__identification margin-bottom-64">
+            <p class="projects__header projects__header--scale"> AI-powered Form for Marketplace </p>
+            <div class="projects__tags">
+              <div><Tags text='Product' outlined={true}/></div>
+              <div><Tags text='AI' outlined={true}/></div>
+              <div><Tags text='2025' outlined={true}/></div>
+
+            </div>
+          </div>
+          <div class="project__main">
+            <div class="project__nav">
+             <div class="project__nav-list">
+              <a href="#context" data-section="context">Context</a>
+              <a href="#challenge" data-section="challenge">Challenge</a>
+              <a href="#my-role" data-section="my-role">My Role</a>
+              <a href="#solution" data-section="solution">Solution</a>
+              <a href="#outcome" data-section="outcome">Outcome</a>
+              </div>
+            </div>
+            <div class="project__content">
+              <div class="project__case-study">
+                <div class="project__introduction">
+                  <span class="project__text"><span class="font-weight-medium">Role:</span> Product Owner </span>
+                  <span class="project__text"><span class="font-weight-medium">Timeline:</span> 2025 </span>
+                </div>
+                <div class="project__context">
+                  <span class="project__subtitle" id="context"> Context </span>
+                  <br>
+                  <span class="project__section-content"> As part of Decathlon’s circular economy strategy, a digital marketplace was created to allow users to resell sports equipment and apparel directly to other users. The initiative aimed to extend product lifecycles, reduce waste, and introduce a sustainable value stream within the Decathlon ecosystem. </span>
+                </div>
+
+                <div class="project__challenge">
+                  <span class="project__subtitle" id="challenge"> Challenge </span>
+                  <div class="project__section-content">
+                    <span> Create a marketplace experience that allowed users to: </span>
+                    <ul>
+                      <li class="project__list-item"> Publish second-hand items quickly and easily </li>
+                      <li class="project__list-item"> Reduce effort and friction during listing creation </li>
+                      <li class="project__list-item"> Ensure clear, accurate product information and pricing</li>
+                      <li class="project__list-item"> Encourage adoption through a fast and intuitive flow </li>
+                    </ul>
+                    <span>
+                      The interface needed to minimize decision fatigue while maintaining trust and listing quality.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="project__role">
+                  <span class="project__subtitle" id="my-role"> My Role </span>
+                  <div class="project__section-content">
+                    <span>As Product Owner, I:</span>
+                    <ul> 
+                      <li>Defined the end-to-end marketplace experience</li> 
+                      <li>Designed flows for listing creation, publication, and management</li> 
+                      <li>Built the product logic and supporting business model</li> 
+                      <li>Led the development of an AI-assisted listing form</li> 
+                      <li>Defined automation logic for item recognition and pricing suggestions</li> 
+                      <li>Held regular alignment meetings with the Decathlon team</li> 
+                      <li>Collaborated with design, engineering, and business stakeholders</li> 
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="project__solution">
+                  <span class="project__subtitle" id="solution"> Solution </span>
+                  <div class="project__section-content">
+                    <span>
+                      The marketplace experience was designed to make listing an item fast, intuitive, and flexible across web and mobile. A key feature was the AI-powered listing form, allowing users to create a listing in under one minute:
+                    </span>
+                    <ul> 
+                      <li>Item recognition via image upload</li> 
+                      <li>Automatic title and description generation</li> 
+                      <li>Suggested category and package size</li> 
+                      <li>AI-assisted price estimation</li> 
+                      <li>Option to review, edit, and publish instantly</li> 
+                    </ul>
+                    <span>
+                      This reduced friction, improved listing quality, and simplified the listing process for all users - not just first-time sellers.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="project__outcome">
+                  <span class="project__subtitle" id="outcome"> Outcome </span>
+                  <div class="project__section-content">
+                    <ul> 
+                      <li> Enabled Decathlon to support its circular economy strategy through peer-to-peer resale </li> 
+                      <li> Reduced friction in listing creation, encouraging user participation </li> 
+                      <li> Improved listing quality and pricing consistency through AI assistance </li> 
+                      <li> Delivered a scalable marketplace foundation for sustainable commerce </li> 
+                      <li> Encouraged reuse and extended product lifecycle within the Decathlon ecosystem </li> 
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Footer />
+  </body>
+</html>
