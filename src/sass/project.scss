@@ -93,12 +93,12 @@
       border-bottom: 2px solid transparent;
 
       &:hover {
-        color: $c-light-gray;
+        color: $c-dark-gray;
         cursor: pointer;
       }
 
       &:active {
-        color: $c-black;
+        color: $c-dark-gray;
       }
     }
   }

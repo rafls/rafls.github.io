@@ -9,7 +9,7 @@
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(8.9px);
   -webkit-backdrop-filter: blur(8.9px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid $c-light-gray;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
