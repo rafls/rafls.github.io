@@ -62,7 +62,7 @@
   }
 
   &__role {
-    font-size: $s-24;
+    font-size: $s-40;
     font-weight: $fw-regular;
     color: $c-dark-gray;
   }
@@ -138,7 +138,7 @@
 
     @media only screen and (min-width: 1024px) {
       flex-direction: row;
-      width: 85%;
+      width: 80%;
     }
   }
 
