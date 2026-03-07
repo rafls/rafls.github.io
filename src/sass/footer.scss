@@ -7,11 +7,11 @@
   padding: $s-18 $s-40;
   font-size: $s-14;
   border-top: 1px solid $c-light-gray;
+  color: $c-dark-gray;
 
   &__text {
     display: flex;
     font-size: $s-10;
-    color: $c-gray;
     gap: $s-6;
     align-items: center;
 

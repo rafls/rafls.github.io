@@ -72,6 +72,10 @@
     color: $c-black;
     max-width: 100%;
     font-family: "DM Sans", sans-serif;
+
+    &--highlight {
+      color: $c-dark-gray;
+    }
   }
 
   &__presentation-bottom {
