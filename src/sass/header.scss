@@ -1,6 +1,4 @@
 .header {
-  position: sticky;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,9 +6,6 @@
   gap: $s-8;
   padding: $s-18 $s-32;
   font-size: $s-14;
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
   border-bottom: 1px solid $c-light-gray;
   z-index: 999;
 
@@ -29,8 +24,15 @@
     }
   }
 
-  &__home {
+  &__name {
     font-size: $s-14;
+    color: $c-black;
+  }
+
+  &__role {
+    margin-left: $s-6;
+    font-size: $s-14;
+    color: $c-gray;
   }
 
   &__navigation {
