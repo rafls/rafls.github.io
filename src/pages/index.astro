@@ -3,12 +3,16 @@
 import Footer from "../components/footer.astro"
 import Header from "../components/header.astro"
 import Tags from "../components/tags.astro"
-import { Image } from 'astro:assets';
+import Image from "astro/components/Image.astro"
 import sustainability from '../../public/images/sustainability.png';
 import healthcare from '../../public/images/healthcare.png';
+import initial from '../../public/images/home-mockup.png';
+
 
 import stylesUrl from "../sass/index.scss?url"
-import '@fontsource-variable/inter';
+import "@fontsource/inter/300.css";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
 ---
 
 <!DOCTYPE html>
@@ -38,33 +42,27 @@ import '@fontsource-variable/inter';
       <div class="container">
       <div class="home">
         <div class="home__top">
-          <div class="home__introduction">
-              <span class="home__role"> Product Owner, and experienced Product Designer </span>
-              <span class="home__focus">I’m particularly enthusiastic about shaping products that drive growth  
-                <br> while being mindful of environmental impact.
-              </span>
-            
+          <div class="home__introduction"> 
             <div class="home__introduction--top">
               <div class="home__tags">
-                <div>
+                <!-- <div>
                   <Tags text='🌍 Open to relocate' outlined={true} />
+                </div> -->
+                <div>
+                  <Tags text='🌍 +3M users impacted' outlined={true} />
                 </div>
                 <div>
-                  <Tags text='🩺 +3M users impacted' outlined={true} />
+                  <Tags text='🩺 Healthcare and Sustainability' outlined={true} />
                 </div>
               </div>
             </div>
-            
+              <div class="home__role"> I guide teams to execute and ship products that matter in the real world. </div>    
           </div>
           <div class="home__project-images">
-            <div class="home__project-image">
+            <!-- <div class="home__project-image">
               <a href="/projects#section-sustainability">
                 <Image src={sustainability} class="project__image-large" alt="Sustainability" />
               </a>
-              <div class="home__project-image-text">
-                <span class="custom-font"> Digital products for circular economy </span>
-                <!-- <span class="custom-font text-gray"> Product Owner/Product Designer </span> -->
-              </div>
             </div>
             
             <div class="home__project-image">
@@ -73,9 +71,13 @@ import '@fontsource-variable/inter';
                   <Image src={healthcare} class="project__image-large" alt="Healthcare" />
                 </a>
               </div>
-              <div class="home__project-image-text">
-                <span class="custom-font"> Operational platforms for public health services in Portugal </span>
-                <!-- <span class="custom-font text-gray"> UX/UI Designer </span> -->
+            </div> -->
+
+            <div class="home__project-image">
+              <div class="project__image-large">
+                <a href="/projects#section-submission">
+                  <Image src={initial} class="project__image-large" alt="LoopOS Submission" />
+                </a>
               </div>
             </div>
           </div>

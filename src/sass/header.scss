@@ -4,34 +4,26 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: $s-8;
-  padding: $s-18 $s-32;
-  font-size: $s-14;
-  border-bottom: 1px solid $c-light-gray;
-  z-index: 999;
+  padding: $s-20 $s-32;
+  font-size: $s-16;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
-    padding: $s-18 $s-40;
+    padding: $s-20 $s-40;
   }
 
   a {
     text-decoration: none;
     color: $c-black;
-
-    &:hover {
-      color: $c-gray;
-    }
   }
 
   &__name {
-    font-size: $s-14;
     color: $c-black;
   }
 
   &__role {
-    margin-left: $s-6;
-    font-size: $s-14;
+    margin-left: $s-4;
     color: $c-gray;
   }
 
@@ -40,7 +32,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: $s-10;
+    gap: $s-14;
   }
 
   &__arrow {
@@ -50,6 +42,7 @@
 
   &__resume {
     border: 1px solid $c-black;
+    font-size: $s-14;
     border-radius: $s-24;
     padding: $s-4 $s-6;
     gap: $s-2;
