@@ -5,14 +5,13 @@
   align-items: center;
   font-weight: $fw-regular;
   padding: $s-18 $s-40;
-  color: $c-dark-gray;
   font-size: $s-14;
   border-top: 1px solid $c-light-gray;
 
   &__text {
     display: flex;
     font-size: $s-10;
-    color: $c-black;
+    color: $c-gray;
     gap: $s-6;
     align-items: center;
 

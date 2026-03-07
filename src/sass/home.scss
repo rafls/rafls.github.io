@@ -69,7 +69,7 @@
     font-size: $s-32;
     font-weight: $fw-regular;
     line-height: 130%;
-    color: $c-dark-gray;
+    color: $c-black;
     max-width: 100%;
     font-family: "DM Sans", sans-serif;
   }
@@ -165,14 +165,9 @@
   }
 
   &__project-image-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-size: $s-14;
+    text-align: end;
     gap: $s-8;
-
-    @media only screen and (min-width: 1024px) {
-      flex-direction: row;
-      gap: $s-16;
-    }
+    color: $c-gray;
   }
 }
