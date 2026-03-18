@@ -4,8 +4,6 @@ import Footer from "../components/footer.astro"
 import Header from "../components/header.astro"
 import Tags from "../components/tags.astro"
 import Image from "astro/components/Image.astro"
-import sustainability from '../../public/images/sustainability.png';
-import healthcare from '../../public/images/healthcare.png';
 import initial from '../../public/images/home-mockup.png';
 
 
@@ -24,6 +22,7 @@ import "@fontsource/inter/500.css";
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link rel="preload" href={stylesUrl} as="style">
     <link rel="stylesheet" href={stylesUrl}>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="../"></script>
 
     <script is:inline define:vars={{ isProd: import.meta.env.PROD }}>
@@ -56,23 +55,9 @@ import "@fontsource/inter/500.css";
                 </div>
               </div>
             </div>
-              <div class="home__role"> I guide teams to execute and ship products <span class="home__role home__role--highlight"> that matter in the real world. </span> </div>    
+              <div class="home__role"> I guide teams from idea to product, <span class="home__role home__role--highlight"> shipping products that matter in the real world. </span> </div>    
           </div>
           <div class="home__project-images">
-            <!-- <div class="home__project-image">
-              <a href="/projects#section-sustainability">
-                <Image src={sustainability} class="project__image-large" alt="Sustainability" />
-              </a>
-            </div>
-            
-            <div class="home__project-image">
-              <div class="project__image-large">
-                <a href="/projects#section-healthcare">
-                  <Image src={healthcare} class="project__image-large" alt="Healthcare" />
-                </a>
-              </div>
-            </div> -->
-
             <div class="home__project-image">
               <div class="project__image-large">
                 <a href="/submission">
