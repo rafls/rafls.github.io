@@ -1,7 +1,6 @@
 ---
 import Header from "../components/header.astro"
 import Tags from "../components/tags.astro"
-import { Image } from 'astro:assets';
 
 import stylesUrl from "../sass/index.scss?url"
 import '@fontsource-variable/inter';
@@ -46,9 +45,11 @@ import Footer from "../components/footer.astro";
                 <div class="project__introduction">
                   <span class="project__text"><span class="font-weight-medium">Role:</span> UI/UX Designer </span>
                   <span class="project__text"><span class="font-weight-medium">Timeline:</span> 2021-2022 </span>
-                  <span class="project__text"><span class="font-weight-medium">Tools:</span> Figma </span>
+                  <span class="project__text"><span class="font-weight-medium">Tools:</span> Figma, React </span>
                 </div>
-
+                <video controls width="600">
+                  <source src="/images/video-anf.mov" type="video/mp4" />
+                </video> 
                 <div class="project__context">
                   <span class="project__subtitle" id="context"> Context </span>
                   <br>
