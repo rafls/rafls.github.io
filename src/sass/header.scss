@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: $s-8;
@@ -8,7 +8,6 @@
   font-size: $s-16;
 
   @media only screen and (min-width: 768px) {
-    flex-direction: row;
     align-items: center;
     padding: $s-20 $s-40;
   }
@@ -32,7 +31,78 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     gap: $s-14;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    a {
+      font-size: $s-16;
+      line-height: normal;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      position: absolute;
+      top: calc(100% + $s-8);
+      right: 0;
+      left: auto;
+      width: max-content;
+      min-width: 200px;
+      flex-direction: column;
+      align-items: stretch;
+      gap: $s-12;
+      padding: $s-12;
+      display: none;
+      border: 1px solid rgba($c-black, 0.1);
+      border-radius: $s-8;
+      background-color: $c-background;
+      box-shadow: 0 8px 24px rgba($c-black, 0.06);
+      z-index: 999;
+
+      a {
+        padding: 0;
+      }
+    }
+  }
+
+  &--menu-open .header__navigation {
+    @media only screen and (max-width: 767px) {
+      display: flex;
+    }
+  }
+
+  &__menu {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media only screen and (max-width: 767px) {
+      position: relative;
+    }
+  }
+
+  &__burger {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+
+    @media only screen and (max-width: 767px) {
+      display: inline-flex;
+    }
+  }
+
+  &__burger-icon {
+    width: 20px;
+    height: 20px;
   }
 
   &__arrow {
@@ -55,6 +125,16 @@
       &:hover {
         transform: scale(1.02);
       }
+    }
+
+    @media only screen and (max-width: 767px) {
+      border: 1px solid $c-black;
+      border-radius: $s-24;
+      padding: $s-4 $s-6;
+      font-size: $s-14;
+      width: fit-content;
+      align-self: flex-start;
+      background-color: $c-background;
     }
   }
 }

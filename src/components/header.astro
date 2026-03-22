@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import arrow from '../../public/images/arrow-up-right-regular.svg';
+import menuBars from '../../public/images/menu-bars.svg';
 
 import '@fontsource-variable/inter';
 ---
@@ -9,13 +10,46 @@ import '@fontsource-variable/inter';
   <div class="header__presentation">
     <a href="/" class="header__name"> Rafaela Silva <span class="header__role"> Product Owner & Designer </span> </a>
   </div>
-  <div class="header__navigation">
-    <a href="/projects"> Case studies </a>
-    <a href="/rafls-resume.pdf">
-      <button class="header__resume header__resume--scale">
-        <span> Resume </span>
-        <Image src={arrow} class="header__arrow" alt="arrow up right" />
-      </button> 
-    </a>
+  <div class="header__menu">
+    <button
+      class="header__burger"
+      type="button"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+      aria-controls="header-mobile-navigation"
+    >
+      <Image src={menuBars} class="header__burger-icon" alt="menu" />
+    </button>
+    <div class="header__navigation" id="header-mobile-navigation">
+      <a href="/projects"> Case studies </a>
+      <a href="/rafls-resume.pdf">
+        <button class="header__resume header__resume--scale">
+          <span> Resume </span>
+          <Image src={arrow} class="header__arrow" alt="arrow up right" />
+        </button> 
+      </a>
+    </div>
   </div>
 </div>
+
+<script is:inline>
+  const header = document.querySelector(".header");
+  const burgerButton = header?.querySelector(".header__burger");
+  const navigationLinks = header?.querySelectorAll(".header__navigation a");
+
+  if (header && burgerButton) {
+    const setMenuState = (isOpen) => {
+      header.classList.toggle("header--menu-open", isOpen);
+      burgerButton.setAttribute("aria-expanded", String(isOpen));
+    };
+
+    burgerButton.addEventListener("click", () => {
+      const isOpen = !header.classList.contains("header--menu-open");
+      setMenuState(isOpen);
+    });
+
+    navigationLinks?.forEach((link) => {
+      link.addEventListener("click", () => setMenuState(false));
+    });
+  }
+</script>

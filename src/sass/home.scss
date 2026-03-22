@@ -66,9 +66,9 @@
   }
 
   &__role {
-    font-size: $s-40;
+    font-size: $s-32;
     font-weight: $fw-regular;
-    line-height: 130%;
+    line-height: 120%;
     color: $c-black;
     max-width: 100%;
     font-family:
@@ -81,6 +81,10 @@
 
     &--highlight {
       color: $c-dark-gray;
+    }
+
+    @media only screen and (min-width: 768px) {
+      font-size: $s-40;
     }
   }
 
