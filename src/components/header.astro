@@ -33,23 +33,29 @@ import '@fontsource-variable/inter';
 </div>
 
 <script is:inline>
-  const header = document.querySelector(".header");
-  const burgerButton = header?.querySelector(".header__burger");
-  const navigationLinks = header?.querySelectorAll(".header__navigation a");
+  (function () {
+    const header = document.querySelector(".header");
+    const burgerButton = header?.querySelector(".header__burger");
+    const navigationLinks = header?.querySelectorAll(".header__navigation a");
 
-  if (header && burgerButton) {
-    const setMenuState = (isOpen) => {
-      header.classList.toggle("header--menu-open", isOpen);
+    if (!header || !burgerButton) return;
+
+    // If this script runs more than once (e.g. View Transitions), avoid stacking
+    // duplicate listeners — each click would fire twice and cancel the toggle.
+    if (header.dataset.mobileNavBound === "true") return;
+    header.dataset.mobileNavBound = "true";
+
+    burgerButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const isOpen = header.classList.toggle("header--menu-open");
       burgerButton.setAttribute("aria-expanded", String(isOpen));
-    };
-
-    burgerButton.addEventListener("click", () => {
-      const isOpen = !header.classList.contains("header--menu-open");
-      setMenuState(isOpen);
     });
 
     navigationLinks?.forEach((link) => {
-      link.addEventListener("click", () => setMenuState(false));
+      link.addEventListener("click", () => {
+        header.classList.remove("header--menu-open");
+        burgerButton.setAttribute("aria-expanded", "false");
+      });
     });
-  }
+  })();
 </script>
