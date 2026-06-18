@@ -1,6 +1,7 @@
 ---
 import Header from "../components/header.astro"
 import Tags from "../components/tags.astro"
+import Theme from "../components/theme.astro"
 
 import stylesUrl from "../sass/index.scss?url"
 import '@fontsource-variable/inter';
@@ -10,6 +11,7 @@ import Footer from "../components/footer.astro";
 <!DOCTYPE html>
 <html >
   <head>
+    <Theme />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link rel="preload" href={stylesUrl} as="style">

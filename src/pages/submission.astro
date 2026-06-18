@@ -1,6 +1,7 @@
 ---
 import Header from "../components/header.astro"
 import Tags from "../components/tags.astro"
+import Theme from "../components/theme.astro"
 import { Image } from 'astro:assets';
 import generalLayout from '../../public/images/general-layout.png';
 import wLogin from '../../public/images/w-login.png';
@@ -30,6 +31,7 @@ import Footer from "../components/footer.astro";
 <!DOCTYPE html>
 <html >
   <head>
+    <Theme />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <link rel="preload" href={stylesUrl} as="style">

@@ -2,15 +2,15 @@
 
 // colors
 
-$c-black: #202020;
-$c-white: #ffffff;
-$c-foam: #e5e1db;
-$c-beige: #e2d4b8;
-$c-light-beige: #edeceb;
-$c-dark-gray: #3d3d3d;
-$c-gray: #808080;
-$c-light-gray: #dddddd;
-$c-background: #f7f4ef;
+$c-black: var(--c-black);
+$c-white: var(--c-white);
+$c-foam: var(--c-foam);
+$c-beige: var(--c-beige);
+$c-light-beige: var(--c-light-beige);
+$c-dark-gray: var(--c-dark-gray);
+$c-gray: var(--c-gray);
+$c-light-gray: var(--c-light-gray);
+$c-background: var(--c-background);
 
 // sizes
 
