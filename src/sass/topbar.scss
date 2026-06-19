@@ -7,7 +7,7 @@
   font-size: $s-12;
   color: $c-gray;
   position: relative;
-  border-bottom: 1px solid var(--c-light-gray);
+  background-color: var(--c-foam);
 
   &__text {
     display: inline-flex;
@@ -40,6 +40,11 @@
       opacity: 1;
     }
   }
+}
+
+[data-theme="dark"] .topbar {
+  background-color: transparent;
+  border-bottom: 1px solid var(--c-light-gray);
 }
 
 // Prevent the fade-in animation from affecting the topbar
