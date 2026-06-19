@@ -1,0 +1,49 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $s-8;
+  padding: $s-8 $s-16;
+  font-size: $s-12;
+  color: $c-gray;
+  position: relative;
+  border-bottom: 1px solid var(--c-light-gray);
+
+  &__text {
+    display: inline-flex;
+    align-items: center;
+    gap: $s-6;
+  }
+
+  &__bolt {
+    flex-shrink: 0;
+  }
+
+  &__close {
+    position: absolute;
+    right: $s-12;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $c-gray;
+    padding: $s-4;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// Prevent the fade-in animation from affecting the topbar
+.topbar {
+  opacity: 1;
+  animation: none;
+}

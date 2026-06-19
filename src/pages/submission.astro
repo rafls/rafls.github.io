@@ -2,6 +2,7 @@
 import Header from "../components/header.astro"
 import Tags from "../components/tags.astro"
 import Theme from "../components/theme.astro"
+import Topbar from "../components/topbar.astro"
 import { Image } from 'astro:assets';
 import generalLayout from '../../public/images/general-layout.png';
 import wLogin from '../../public/images/w-login.png';
@@ -39,6 +40,7 @@ import Footer from "../components/footer.astro";
     <script type="text/javascript" src="../"></script>
   </head>
   <body>
+    <Topbar />
     <Header />
     <div class="container">
       <div class="project">
