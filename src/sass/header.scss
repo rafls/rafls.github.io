@@ -44,6 +44,7 @@
     a {
       font-size: $s-16;
       line-height: normal;
+      color: $c-black;
 
       &:hover {
         background-color: transparent;
@@ -72,6 +73,7 @@
 
       a {
         padding: 0;
+        color: $c-black;
       }
     }
   }
