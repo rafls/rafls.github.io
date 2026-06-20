@@ -154,8 +154,20 @@
       font-size: $s-14;
       width: fit-content;
       align-self: flex-start;
-      background-color: $c-background;
+      background-color: transparent;
     }
+  }
+}
+
+:root .header__navigation {
+  @media only screen and (max-width: 767px) {
+    background-color: $c-foam;
+  }
+}
+
+[data-theme="dark"] .header__navigation {
+  @media only screen and (max-width: 767px) {
+    background-color: $c-white;
   }
 }
 
