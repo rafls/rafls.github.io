@@ -148,9 +148,9 @@
     }
 
     @media only screen and (max-width: 767px) {
-      border: 1px solid $c-black;
+      border: none;
       border-radius: $s-24;
-      padding: $s-4 $s-6;
+      padding: $s-8 $s-14;
       font-size: $s-14;
       width: fit-content;
       align-self: flex-start;
@@ -182,9 +182,16 @@
   padding: $s-4;
   border-radius: 50%;
   transition: color 0.3s ease;
+  opacity: 1;
+  animation: none;
 
   &:hover {
     color: $c-gray;
+  }
+
+  svg {
+    opacity: 1;
+    animation: none;
   }
 
   &__sun {

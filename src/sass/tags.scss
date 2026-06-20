@@ -7,17 +7,40 @@
   padding: $s-2 $s-8;
   font-size: $s-14;
   font-family: "Inter", sans-serif;
+  position: relative;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: $s-16;
+    border: 1px solid transparent;
+    mask: radial-gradient(circle at 0 0, transparent 12px, black 24px),
+          radial-gradient(circle at 100% 100%, transparent 12px, black 24px);
+    mask-composite: intersect;
+    -webkit-mask: radial-gradient(circle at 0 0, transparent 12px, black 24px),
+                  radial-gradient(circle at 100% 100%, transparent 12px, black 24px);
+    -webkit-mask-composite: source-in;
+    pointer-events: none;
+  }
 
   &__filled {
     background-color: $c-light-beige;
-    border: 1px solid $c-gray;
     color: $c-black;
+
+    &::before {
+      border-color: $c-gray;
+    }
   }
 
   &__outlined {
     backdrop-filter: blur(5px);
-    border-radius: $s-16;
-    border: 1px solid $c-light-gray;
     color: $c-dark-gray;
+
+    &::before {
+      border-color: $c-light-gray;
+    }
   }
 }
