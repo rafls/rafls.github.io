@@ -17,11 +17,11 @@
     inset: -1px;
     border-radius: $s-16;
     border: 1px solid transparent;
-    mask: radial-gradient(circle at 0 0, transparent 12px, black 24px),
-          radial-gradient(circle at 100% 100%, transparent 12px, black 24px);
+    mask: radial-gradient(circle at 0 0, rgba(0,0,0,0.2) 12px, black 24px),
+          radial-gradient(circle at 100% 100%, rgba(0,0,0,0.2) 12px, black 24px);
     mask-composite: intersect;
-    -webkit-mask: radial-gradient(circle at 0 0, transparent 12px, black 24px),
-                  radial-gradient(circle at 100% 100%, transparent 12px, black 24px);
+    -webkit-mask: radial-gradient(circle at 0 0, rgba(0,0,0,0.2) 12px, black 24px),
+                  radial-gradient(circle at 100% 100%, rgba(0,0,0,0.2) 12px, black 24px);
     -webkit-mask-composite: source-in;
     pointer-events: none;
   }
