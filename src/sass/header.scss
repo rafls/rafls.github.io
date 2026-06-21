@@ -45,9 +45,10 @@
       font-size: $s-16;
       line-height: normal;
       color: $c-black;
+      transition: color 0.3s ease;
 
       &:hover {
-        background-color: transparent;
+        color: $c-gray;
       }
     }
 
