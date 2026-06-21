@@ -131,6 +131,12 @@
     width: $s-12;
   }
 
+  &__casestudy {
+    &:hover {
+      color: $c-gray !important;
+    }
+  }
+
   &__resume {
     border: none;
     font-size: $s-14;
