@@ -80,10 +80,44 @@
     font-size: $s-14;
   }
 
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: $s-16;
+    padding-top: $s-48;
+    border-top: 1px solid $c-light-gray;
+    margin-top: $s-48;
+
+    a {
+      text-decoration: none;
+      color: $c-dark-gray;
+      font-weight: $fw-medium;
+      font-size: $s-14;
+      padding: $s-8 0;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__nav-link--prev {
+    margin-right: auto;
+  }
+
+  &__nav-link--next {
+    margin-left: auto;
+  }
+
   &__nav {
     display: flex;
     flex-direction: row;
-    gap: 56px;
 
     @media only screen and (min-width: 1440px) {
       width: 10%;
@@ -92,9 +126,14 @@
 
   &__nav-list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: $s-6;
     font-size: $s-14;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: column;
+    }
 
     a {
       text-decoration: none;
