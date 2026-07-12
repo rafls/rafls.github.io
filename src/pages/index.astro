@@ -95,7 +95,7 @@ import "@fontsource/inter/500.css";
       for (const c of circles) {
         c.ox += (mouseX * c.intensity - c.ox) * c.speed;
         c.oy += (mouseY * c.intensity - c.oy) * c.speed;
-        c.el.style.transform = `translate(${c.ox}px, ${c.oy}px)`;
+        if (c.el) c.el.style.transform = `translate(${c.ox}px, ${c.oy}px)`;
       }
       requestAnimationFrame(animate);
     }
