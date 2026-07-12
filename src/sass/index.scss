@@ -101,7 +101,8 @@
 
 #research-text,
 #strategy-text,
-#discovery-text {
+#discovery-text,
+#delivery-text {
   position: absolute;
   font-size: 11px;
   color: var(--c-gray);
@@ -119,6 +120,12 @@
   @media only screen and (min-width: 1920px) {
     font-size: $s-14;
   }
+}
+
+#delivery-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #research-text,
