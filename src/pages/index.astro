@@ -5,10 +5,6 @@ import Header from "../components/header.astro"
 import Theme from "../components/theme.astro"
 import Topbar from "../components/topbar.astro"
 import Tags from "../components/tags.astro"
-import Image from "astro/components/Image.astro"
-import initial from '../../public/images/home-mockup.png';
-
-
 import stylesUrl from "../sass/index.scss?url"
 import "@fontsource/inter/300.css";
 import "@fontsource/inter/400.css";
@@ -56,15 +52,22 @@ import "@fontsource/inter/500.css";
                 </div>
               </div>
             </div>
-              <div class="home__role"> Guiding cross-functional teams from idea to product, <span class="home__role home__role--highlight"> creating real-world impact. </span> </div>    
+               <div class="home__role"> Product Owner, <span class="home__role home__role--highlight">with solid Product Design experience,</span> <br/> guiding cross-functional teams from idea to product. </div>    
+              <div class="home__clients">
+                Selected clients — <span class="home__clients-name">Red Cross</span>, <span class="home__clients-name">Portuguese Pharmacies</span>, <span class="home__clients-name">Ticketline</span>, <span class="home__clients-name">Decathlon</span> and <span class="home__clients-name">FNAC</span>
+              </div>
           </div>
           <div class="home__project-images">
-            <div class="home__project-image">
-              <div class="project__image-large">
-                <a href="/submission">
-                  <Image src={initial} class="project__image-large" alt="LoopOS Submission" />
-                </a>
-                <span class="home__project-image-text"> LoopOS </span>
+            <div id="circles-wrapper">
+              <div id="cursor-circle">
+                <span id="research-text">Definition</span>
+              </div>
+              <div id="cursor-circle-3">
+                <span id="strategy-text">Development</span>
+              </div>
+              <div id="cursor-circle-4"></div>
+              <div id="cursor-circle-5">
+                <span id="discovery-text">Discovery</span>
               </div>
             </div>
           </div>
@@ -74,4 +77,28 @@ import "@fontsource/inter/500.css";
     </div>
     <Footer />
   </body>
+  <script>
+    const circles = [
+      { el: document.getElementById('cursor-circle'), ox: 0, oy: 0, intensity: 20, speed: 0.08 },
+      { el: document.getElementById('cursor-circle-3'), ox: 0, oy: 0, intensity: 10, speed: 0.1 },
+      { el: document.getElementById('cursor-circle-4'), ox: 0, oy: 0, intensity: -8, speed: 0.04 },
+      { el: document.getElementById('cursor-circle-5'), ox: 0, oy: 0, intensity: 16, speed: 0.07 },
+    ];
+    let mouseX = 0, mouseY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX / window.innerWidth - 0.5;
+      mouseY = e.clientY / window.innerHeight - 0.5;
+    });
+
+    function animate() {
+      for (const c of circles) {
+        c.ox += (mouseX * c.intensity - c.ox) * c.speed;
+        c.oy += (mouseY * c.intensity - c.oy) * c.speed;
+        c.el.style.transform = `translate(${c.ox}px, ${c.oy}px)`;
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
 </html>

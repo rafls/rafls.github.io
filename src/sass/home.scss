@@ -56,6 +56,14 @@
     gap: $s-16;
     width: 100%;
 
+    @media only screen and (min-width: 1024px) {
+      width: 65%;
+    }
+
+    @media only screen and (min-width: 1440px) {
+      width: 60%;
+    }
+
     &--top {
       width: 100%;
       display: flex;
@@ -66,9 +74,9 @@
   }
 
   &__role {
-    font-size: $s-32;
+    font-size: $s-20;
     font-weight: $fw-regular;
-    line-height: 120%;
+    line-height: 130%;
     color: $c-black;
     max-width: 100%;
     font-family:
@@ -84,7 +92,11 @@
     }
 
     @media only screen and (min-width: 768px) {
-      font-size: $s-40;
+      font-size: $s-24;
+    }
+
+    @media only screen and (min-width: 1800px) {
+      font-size: $s-28;
     }
   }
 
@@ -149,10 +161,16 @@
     flex-direction: row;
     gap: $s-16;
     justify-content: flex-end;
+    align-items: center;
 
     @media only screen and (min-width: 1024px) {
       flex-direction: row;
-      width: 100%;
+      width: 35%;
+      justify-content: center;
+    }
+
+    @media only screen and (min-width: 1440px) {
+      width: 40%;
     }
   }
 
@@ -183,5 +201,17 @@
     text-align: end;
     gap: $s-8;
     color: $c-gray;
+  }
+
+  &__clients {
+    font-size: $s-14;
+    color: $c-gray;
+    font-weight: $fw-regular;
+    line-height: 1.6;
+
+    &-name {
+      font-weight: $fw-regular;
+      color: $c-dark-gray;
+    }
   }
 }

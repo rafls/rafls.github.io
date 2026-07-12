@@ -146,14 +146,6 @@
     background-color: transparent;
     cursor: pointer;
 
-    &--scale {
-      transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.02);
-      }
-    }
-
     @media only screen and (max-width: 767px) {
       border: none;
       border-radius: $s-24;
